@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Mi Curriculum Vitae
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido/a a mi repositorio de currículum vitae en GitHub! Aquí encontrarás información detallada sobre mi experiencia, habilidades y proyectos relevantes. Este repositorio proporciona una forma interactiva y accesible de explorar mi perfil.
 
-## Available Scripts
+## Acerca de mí
 
-In the project directory, you can run:
+¡Hola! Soy Luis Castro, un desarrollador web apasionado por crear y solucionar problemas. A lo largo de mi carrera, he trabajado en diversas áreas, adquiriendo habilidades en Angular y react. Mi enfoque se encuentra en Front End developer, y siempre estoy emocionado/a por aprender y crecer en entornos desafiantes.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cómo Ver Mi Currículum
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Puedes explorar mi currículum vitae de las siguientes maneras:
 
-### `npm test`
+1. **Interactivo:** Accede a [mi currículum interactivo](https://luiscastro8p.github.io/mi-cv/) alojado en GitHub Pages. Este formato te permitirá navegar por mi experiencia y proyectos de manera interactiva.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Descargable:** Si prefieres una versión en PDF, simplemente descarga el archivo `cv.pdf` en este repositorio y podrás revisar mi currículum sin conexión.
 
-### `npm run build`
+## Cómo Contactarme
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+¡Me encantaría tener la oportunidad de conectarme contigo! Si deseas discutir oportunidades profesionales, proyectos conjuntos o simplemente charlar sobre temas afines, puedes contactarme a través de [luisarmandocastro@email.com](luisarmandocastro@email.com) o visitar mi perfil de Facebook: [Tu Perfil de LinkedIn](https://www.facebook.com/luiscastro8p/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Agradecimientos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Agradezco tu interés en conocerme mejor a través de mi currículum vitae en GitHub. Espero que encuentres valiosa la información presentada aquí. No dudes en contactarme si tienes alguna pregunta o inquietud. ¡Espero tener la oportunidad de conectarnos pronto!
 
-### `npm run eject`
+---
+*"El aprendizaje es un viaje continuo, y cada paso nos acerca a nuevas oportunidades."*
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+© Luis Castro | Última actualización: ago/23
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por visitar mi repositorio!
