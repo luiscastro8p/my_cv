@@ -17,7 +17,7 @@ Puedes explorar mi currículum vitae de las siguientes maneras:
 
 ## Cómo Contactarme
 
-¡Me encantaría tener la oportunidad de conectarme contigo! Si deseas discutir oportunidades profesionales, proyectos conjuntos o simplemente charlar sobre temas afines, puedes contactarme a través de [luisarmandocastro@email.com](luisarmandocastro@email.com) o visitar mi perfil de Facebook: [Tu Perfil de LinkedIn](https://www.facebook.com/luiscastro8p/).
+¡Me encantaría tener la oportunidad de conectarme contigo! Si deseas discutir oportunidades profesionales, proyectos conjuntos o simplemente charlar sobre temas afines, puedes contactarme a través de [luisarmandocastro@email.com](luisarmandocastro@email.com) o visitar mi perfil de Facebook: [Tu Perfil de Facebook](https://www.facebook.com/luiscastro8p/).
 
 ## Agradecimientos
 
