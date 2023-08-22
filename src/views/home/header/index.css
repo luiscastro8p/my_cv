@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px 0px 40px;
+  box-shadow: 1px 5px 13px 5px rgba(0, 0, 0, 0.09);
+}
+.header .menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+}
+
+.header .menu ul li {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header .menu ul li:hover {
+  background-color: var(--secondary-light);
+}

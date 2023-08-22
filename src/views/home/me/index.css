@@ -1,0 +1,60 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.img-profile {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: var(--secondary-light);
+  z-index: -1;
+}
+.img-profile::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(../../../assets/img/perfil.png);
+  background-size: cover;
+  display: block;
+  border-radius: 0px 0 50% 50%;
+}
+.points {
+  width: 500px;
+  height: 500px;
+}
+.points::after {
+  width: 10%;
+  height: 10%;
+  content: "";
+  background-color: var(--dark);
+  display: block;
+  border-radius: 100%;
+  bottom: 96%;
+  left: 13px;
+  z-index: -1;
+}
+.big-point {
+  width: 25%;
+  height: 25%;
+  content: "";
+  background-color: var(--dark);
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 74%;
+  z-index: -1;
+  right: 23px;
+}
+.small-point {
+  width: 10%;
+  height: 10%;
+  content: "";
+  background-color: var(--dark);
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 24%;
+  left: -40px;
+}
