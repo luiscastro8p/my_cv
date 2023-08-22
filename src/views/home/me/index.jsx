@@ -1,16 +1,18 @@
 import React from "react";
 import "./index.css";
+import TypingEffect from "../../../components/typeWriteEffect";
 
 const Me = () => {
   return (
-    <section className="home">
+    <section className="container home">
       <div className="home-body">
-        <h3>Hola, soy Luis Castro</h3>
-        <h5>Desarrollador web</h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-          distinctio reprehenderit ab voluptates sed dolor porro fuga!
-        </p>
+        <div className="content">
+          <h2>Hola, soy Luis Castro</h2>
+          <TypingEffect data={["Desarrollador web","Ing. informático", "Técnico en computación"]} />
+          <small>
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </small>
+        </div>
       </div>
       <div style={{ position: "relative" }}>
         <div className="img-profile">

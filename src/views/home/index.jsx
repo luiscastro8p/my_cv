@@ -5,7 +5,7 @@ import Me from "./me";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div>
       <Header />
       <Me />
     </div>

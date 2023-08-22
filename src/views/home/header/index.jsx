@@ -3,8 +3,8 @@ import "./index.css";
 
 const Navbar = () => {
   return (
-    <div className="header">
-      <h2>Luis Castro</h2>
+    <div className="header container ">
+      <h2>Portafolio</h2>
       <nav className="menu">
         <ul>
           <li>
