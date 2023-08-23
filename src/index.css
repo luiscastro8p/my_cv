@@ -54,3 +54,28 @@ body {
     opacity: 1;
   }
 }
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  border: 1px solid var(--primary);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-white {
+  background-color: white;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  border:transparent;
+  font-weight: 700;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
