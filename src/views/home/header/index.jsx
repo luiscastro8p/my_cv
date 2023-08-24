@@ -8,19 +8,23 @@ const Navbar = () => {
       <nav className="menu">
         <ul>
           <li>
-            <a>Inicio</a>
+            <a data-item="Home">Home</a>
           </li>
           <li>
-            <a>Habilidades</a>
+            <a data-item="Habilidades">Habilidades</a>
           </li>
           <li>
-            <a>Servicios</a>
+            <a data-item="Servicios">Servicios</a>
           </li>
           <li>
-            <a>Reseñas</a>
+            <a data-item="Reseñas">Reseñas</a>
           </li>
           <li>
-            <a>Contacto</a>
+            <a data-item="Contacto">Contacto</a>
+          </li>
+          <li>
+            <button className="btn-dark">Más sobre mí</button>
+
           </li>
         </ul>
       </nav>

@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 1px 5px 13px 5px rgba(0, 0, 0, 0.09);
+  font-size: 18px;
+  font-weight: 700;
 }
 .header .menu ul {
   list-style: none;
@@ -15,9 +17,34 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  cursor: pointer;
 }
 
-.header .menu ul li:hover {
-  background-color: var(--secondary-light);
+.header  nav {
+  list-style: none;
+  display: flex;
+}
+
+.header  nav li a {
+  text-decoration: none;
+  color: #8f8f8f;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  cursor: pointer;
+
+}
+.header  nav li a::before {
+  content: attr(data-item);
+  transition: 0.5s;
+  color: var(--secondary-light);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+.header  nav li a:hover::before {
+  width: 100%;
+  transition: all 0.4s ease-in-out;
 }

@@ -8,12 +8,20 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 50%;
+
 }
-.home .home-body .content {
+.home .home-body .content-text {
   display: flex;
   justify-content: center;
   gap: 6px;
   flex-direction: column;
+}
+.content-image{
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .home-body h2 {
   font-weight: 700;
@@ -51,8 +59,8 @@
   height: 500px;
 }
 .points::after {
-  width: 10%;
-  height: 10%;
+  width: 40px;
+  height: 40px;
   content: "";
   background-color: var(--dark);
   display: block;

@@ -11,7 +11,7 @@ const Me = () => {
   return (
     <section className="container home">
       <div className="home-body">
-        <div className="content">
+        <div className="content-text">
           <h2>Hola, soy Luis Castro</h2>
           <TypingEffect
             data={[
@@ -22,7 +22,7 @@ const Me = () => {
           />
           <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
           <div className="buttons-body">
-            <button className="btn-dark">Más sobre mis</button>
+            <button className="btn-dark">Más sobre mí</button>
             <button className="btn-white">
               Resumen
               <img
@@ -58,10 +58,12 @@ const Me = () => {
           </div>
         </div>
       </div>
-      <div style={{ position: "relative" }}>
-        <div className="img-profile">
-          <div className="small-point" />
-          <div className="big-point" />
+      <div className="content-image">
+        <div style={{position:'relative'}}>
+          <div className="img-profile">
+            <div className="small-point" />
+            <div className="big-point" />
+          </div>
         </div>
       </div>
     </section>
