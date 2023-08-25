@@ -5,9 +5,11 @@ import Me from "./me";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{position:'relative'}}>
       <Header />
       <Me />
+  
+
     </div>
   );
 };

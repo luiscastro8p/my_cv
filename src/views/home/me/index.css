@@ -1,15 +1,20 @@
+.background-home{
+  padding-top: 200px;
+
+}
 .home {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 30px;
+  width: 100%;
+  padding-bottom: 50px;
+
 }
 .home .home-body {
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex: 50%;
-
 }
 .home .home-body .content-text {
   display: flex;
@@ -17,16 +22,19 @@
   gap: 6px;
   flex-direction: column;
 }
-.content-image{
+.content-image {
   flex: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .home .home-body h2 {
-  font-weight: 700;
-  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Anton';
+  font-size: 70px;
   margin: 0;
+  letter-spacing:4px;
+  line-height:1.1;
 }
 .typeWriteEffect {
   font-size: 2.25rem;
@@ -43,6 +51,7 @@
   width: 400px;
   height: 400px;
   background-color: var(--secondary-light);
+
   z-index: -1;
 }
 .img-profile::before {
@@ -63,6 +72,7 @@
   height: 40px;
   content: "";
   background-color: var(--dark);
+  
   display: block;
   border-radius: 100%;
   bottom: 96%;
@@ -86,6 +96,7 @@
   height: 10%;
   content: "";
   background-color: var(--dark);
+  
   display: block;
   border-radius: 100%;
   position: absolute;
@@ -94,18 +105,18 @@
   left: -40px;
 }
 
-.buttons-body{
+.buttons-body {
   display: flex;
   gap: 30px;
   margin-top: 30px;
 }
 
-.img-body{
+.img-body {
   display: flex;
   gap: 5px;
   margin-top: 20px;
 }
-.img-body img{
+.img-body img {
   width: 40px;
   height: 24px;
   cursor: pointer;

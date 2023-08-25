@@ -1,9 +1,23 @@
+.position-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 5px 13px 5px rgba(0, 0, 0, 0.09);
   font-size: 18px;
+  font-weight: 700;
+  background: transparent;
+}
+.header .text {
+  font-size: 20px;
+  font-weight: 100;
+}
+.header .text b {
   font-weight: 700;
 }
 .header .menu ul {
@@ -19,20 +33,19 @@
   padding: 10px;
 }
 
-.header  nav {
+.header nav {
   list-style: none;
   display: flex;
 }
 
-.header  nav li a {
+.header nav li a {
   text-decoration: none;
   color: #8f8f8f;
   transition: all 0.5s ease-in-out;
   position: relative;
   cursor: pointer;
-
 }
-.header  nav li a::before {
+.header nav li a::before {
   content: attr(data-item);
   transition: 0.5s;
   color: var(--secondary-light);
@@ -44,7 +57,7 @@
   width: 0;
   overflow: hidden;
 }
-.header  nav li a:hover::before {
+.header nav li a:hover::before {
   width: 100%;
   transition: all 0.4s ease-in-out;
 }
