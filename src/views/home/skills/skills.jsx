@@ -9,17 +9,15 @@ import html from "../../../assets/img/skills/html.png";
 import css from "../../../assets/img/skills/css.svg";
 import sass from "../../../assets/img/skills/sass.png";
 import ionic from "../../../assets/img/skills/ionic.avif";
+import Separator from "../../../components/separator/separator";
 
 const Skills = () => {
   return (
     <div className="container">
       <section className="skills">
-        <div className="separation">
-          <p>Habilidades</p>
-          <div className="line"></div>
-        </div>
+        <Separator label={"Habilidades"} />
         <div className="content">
-          <div className="question">
+          <div className="question ">
             <p>
               ¿Qué incluyen mis <br></br> habilidades de programación?
             </p>
