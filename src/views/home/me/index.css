@@ -25,7 +25,7 @@
 .content-image {
   flex: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 .home .home-body h2 {

@@ -28,7 +28,7 @@ const TypingEffect = ({data}) => {
 
   return (
     <p className="typing-text typeWriteEffect">
-      {typedText} <b className="parpadea ">|</b>
+      {typedText}<b className="parpadea">|</b>
     </p>
   );
 };

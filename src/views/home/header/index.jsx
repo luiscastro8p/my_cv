@@ -6,8 +6,7 @@ const Navbar = () => {
     <div className="position-header">
       <div className="container header">
         <p className="text">
-          <b>Portafolio </b> /Luis <b>Castro</b>
-        </p>
+          <b>Portafolio </b> /Luis Castro </p>
         <nav className="menu">
           <ul>
             <li>
