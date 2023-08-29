@@ -37,7 +37,10 @@
 .work .content:hover .content-overlay {
   opacity: 1;
 }
-
+.work .item-work{
+  box-shadow: 1px 2px 14px 1px rgba(0,0,0,0.2);
+  border-radius: 20px;
+}
 .work .content-image {
   width: 100%;
 }
@@ -67,7 +70,19 @@
 
 .content-details p {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
+  padding: 18px;
+}
+
+.content-name{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-name div{
+  display: flex;
+  gap: 5px;
 }
 .fadeIn-left {
   left: 20%;
