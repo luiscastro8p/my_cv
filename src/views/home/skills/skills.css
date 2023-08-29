@@ -20,7 +20,7 @@
   border-left: 5px solid var(--secondary-light);
 }
 .skills .question small {
-  text-align: justify;
+  /* text-align: justify; */
   margin: 0;
 }
 .skills .content .img-skills {

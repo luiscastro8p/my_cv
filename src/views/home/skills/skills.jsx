@@ -23,11 +23,11 @@ const Skills = () => {
             </p>
             <small>
               Tengo experiencia sólida en programación con JavaScript y
-              TypeScript, abarcando el desarrollo front-end usando HTML, CSS,
-              React, Ionic y Angular. Además, domino sistemas de control de
-              versiones como Git y la resolución de problemas en entornos de
-              desarrollo. Mi enfoque colaborativo potencia mis habilidades
-              técnicas en proyectos de equipo.
+              TypeScript, abarcando el desarrollo front-end usando{" "}
+              <b className="text-secondary"> HTML, CSS, React, Ionic y Angular.</b> Además, domino sistemas
+              de control de versiones como   <b className="text-secondary">Git</b> y la resolución de problemas en
+              entornos de desarrollo. Mi enfoque colaborativo potencia mis
+              habilidades técnicas en proyectos de equipo.
             </small>
           </div>
           <div className="img-skills">
