@@ -59,6 +59,7 @@
   height: 100%;
   content: "";
   background: url(../../../assets/img/perfil.png);
+  filter: drop-shadow(1px 8px 12px black);
   background-size: cover;
   display: block;
   border-radius: 0px 0 50% 50%;

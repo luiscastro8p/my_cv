@@ -19,9 +19,6 @@ const Navbar = () => {
               <a data-item="Servicios">Servicios</a>
             </li>
             <li>
-              <a data-item="Reseñas">Reseñas</a>
-            </li>
-            <li>
               <a data-item="Contacto">Contacto</a>
             </li>
             <li>
