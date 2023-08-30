@@ -29,6 +29,8 @@
   align-items: center;
 }
 .home .home-body h2 {
+  user-select: none;
+  
   font-weight: 800;
   font-family: 'Anton';
   font-size: 70px;

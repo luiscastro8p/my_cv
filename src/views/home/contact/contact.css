@@ -21,17 +21,19 @@
 .contact .form span {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 700;
+  user-select: none;
 }
 input,
 textarea {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter",
-    "Lucida Typewriter", monospace;
+  "Lucida Typewriter", monospace;
   border-radius: 5px;
   border: 1px solid var(--secondary-light);
   box-shadow: 1px 0px 3px 0px var(--secondary-light);
   font-size: 12px;
   color: rgba(0, 0, 0, 0.7);
   padding: 10px;
+  user-select: none;
 }
 input::placeholder, textarea::placeholder {
   color: rgba(0, 0, 0, 0.4);

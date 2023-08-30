@@ -1,0 +1,14 @@
+.footer{
+  background-color: var(--dark);
+  padding: 30px;
+  text-align: center;
+  color: var(--white);
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer h3{
+ margin: 0;
+}
