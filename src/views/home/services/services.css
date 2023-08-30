@@ -16,35 +16,52 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  height: 173px;
-  width: 365px;
+  height: 176px;
+  width: 376px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.work .item-work img {
-  border-radius: 20px;
+.work .item-work {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.work .item-work .content {
+
+.work-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.work-list .item-work .work-image {
+  border-radius: 20px;
+  width: 60%;
+}
+.work-list .item-work {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.work-list .item-work .content {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
   flex-direction: column;
+  width: 34%;
+
 }
-.work .item-work h3 {
+.work-list .item-work h3 {
   margin: 0;
 }
-.work .item-work .tecnologies {
+.work-list .item-work .tecnologies {
   display: flex;
   gap: 10px;
-}
-
-.item-work{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .work .content .content-overlay {

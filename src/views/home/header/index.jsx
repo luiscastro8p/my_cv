@@ -19,7 +19,7 @@ const Navbar = () => {
               <a data-item="Servicios">Servicios</a>
             </li>
             <li>
-              <a data-item="Contacto">Contacto</a>
+              <a data-item="Contacto">Contáctame</a>
             </li>
             <li>
               <button className="btn-dark">Más sobre mí</button>

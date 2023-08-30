@@ -148,16 +148,11 @@ const Services = () => {
           )}
 
           {mode && (
-            <div className="work">
+            <div className="work-list">
               {works.map((item, idx) => {
                 return (
                   <div className="item-work card" key={idx}>
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      width={800}
-                      height={400}
-                    />
+                    <img className="work-image" src={item.img} alt={item.title} />
 
                     <div className="content">
                       <div className="text">

@@ -17,7 +17,7 @@ const Skills = () => {
       <section className="skills">
         <Separator label={"Habilidades"} />
         <div className="content">
-          <div className="question ">
+          <div className="question">
             <p>
               ¿Qué incluyen mis <br></br> habilidades de programación?
             </p>

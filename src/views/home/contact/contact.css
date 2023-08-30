@@ -1,0 +1,66 @@
+.contact {
+  height: 50vh;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .text {
+  width: 50%;
+}
+.contact .form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+}
+.contact .form span {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+}
+input,
+textarea {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-light);
+  box-shadow: 1px 0px 3px 0px var(--secondary-light);
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+input::placeholder, textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+input,
+textarea:focus-visible {
+  outline: none;
+}
+.form button{
+  background-color: var(--secondary-light);
+  border: 1px solid var(--secondary-light);
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--white);
+}
+.form button:hover{
+  color: var(--secondary);
+  box-shadow: 1px 0px 3px 0px var(--secondary-light);
+}
+.contact .text h2 {
+  font-weight: 100;
+  font-family: "Anton";
+  font-size: 30px;
+  margin: 0;
+}
+.contact p {
+  margin: 0;
+}
