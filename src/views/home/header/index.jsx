@@ -3,16 +3,16 @@ import React from "react";
 import "./index.css";
 
 const Navbar = () => {
-  const sections = [
-    "#section-me",
-    "#section-skills",
-    "#section-services",
-    "#section-contact",
-  ];
   const [activeSection, setActiveSection] = React.useState("");
   const [activeClassHeader, setActiveClassHeader] = React.useState("");
 
   React.useEffect(() => {
+    const sections = [
+      "#section-me",
+      "#section-skills",
+      "#section-services",
+      "#section-contact",
+    ];
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200;
       for (const sectionId of sections) {
