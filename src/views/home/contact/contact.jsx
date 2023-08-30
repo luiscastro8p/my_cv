@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="container">
       <Separator label={"Contáctame"} />
-      <section className="contact">
+      <section className="contact scroll-target" id="section-contact">
         <div className="text">
           <h2>¡Contáctame!</h2>
           <p>

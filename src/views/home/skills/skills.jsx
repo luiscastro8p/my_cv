@@ -14,7 +14,7 @@ import Separator from "../../../components/separator/separator";
 const Skills = () => {
   return (
     <div className="container">
-      <section className="skills">
+      <section className="skills scroll-target" id="section-skills">
         <Separator label={"Habilidades"} />
         <div className="content">
           <div className="question">

@@ -90,8 +90,8 @@ const Services = () => {
     },
   ];
   return (
-    <div className="container">
-      <section className="services">
+    <div className="container"> 
+      <section className="services scroll-target" id="section-services">
         <Separator label={"Servicios"} />
         <p>Éstos son algunos de mis trabajos.</p>
         <div className="icon-collapse">
@@ -121,11 +121,11 @@ const Services = () => {
                 return (
                   <div className="card" key={idx}>
                     <div
-                      class="content"
+                      className="content"
                       style={{ backgroundImage: `url("${item.img}")` }}
                     >
-                      <div class="content-overlay"></div>
-                      <div class="content-details fadeIn-left">
+                      <div className="content-overlay"></div>
+                      <div className="content-details fadeIn-left">
                         <p>{item.description}</p>
                       </div>
                     </div>

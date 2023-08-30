@@ -9,7 +9,7 @@ import download from "../../../assets/img/download.png";
 
 const Me = () => {
   return (
-    <section className="background-home">
+    <section className="background-home scroll-target" id="section-me">
       <div className="container">
         <div className="home">
           <div className="home-body">
