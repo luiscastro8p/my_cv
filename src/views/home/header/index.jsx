@@ -1,10 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./index.css";
+import menu from "../../../assets/img/works/collapse.png";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = React.useState("");
   const [activeClassHeader, setActiveClassHeader] = React.useState("");
+  const [activeMenu, setActiveMenu] = React.useState(false);
 
   React.useEffect(() => {
     const sections = [
@@ -46,13 +48,18 @@ const Navbar = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const onClickMenu = () => {
+    setActiveMenu(!activeMenu);
+  };
   return (
-    <div className={`position-header ${activeClassHeader}`}>
-      <div className="container header">
-        <p className="text">
-          <b>Portafolio </b> /Luis Castro{" "}
-        </p>
-        <nav className="menu">
+    <>
+      {/* <div className={`position-header ${activeClassHeader}`}>
+        <div className="container header">
+          <p className="text">
+            <b>Portafolio </b> /Luis Castro{" "}
+          </p>
+            <nav className="menu">
           <ul>
             <li>
               <a
@@ -97,8 +104,41 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+        </div>
+      </div> */}
+      <div
+        className={`bars ${activeMenu ? "active" : ""}`}
+        id="nav-action"
+        onClick={() => onClickMenu()}
+      >
+        <img src={menu} alt="menu" width={30} />
       </div>
-    </div>
+      <nav className={activeMenu ? "visible" : ""} id="nav">
+        <ul>
+          <li className="shape-circle circle-one">
+            <a onClick={() => scrollToSection("#section-me")}>Home</a>
+          </li>
+          <li className="shape-circle circle-one">
+            <a onClick={() => scrollToSection("#section-skills")}>
+              Habilidades
+            </a>
+          </li>
+          <li className="shape-circle circle-one">
+            <a onClick={() => scrollToSection("#section-services")}>
+              Servicios
+            </a>
+          </li>
+          <li className="shape-circle circle-one">
+            <a onClick={() => scrollToSection("#section-contact")}>
+              Contáctame
+            </a>
+          </li>
+        {/*   <li className="shape-circle circle-one">
+            <a className="btn-dark">Más sobre mí</a>
+          </li> */}
+        </ul>
+      </nav>
+    </>
   );
 };
 
