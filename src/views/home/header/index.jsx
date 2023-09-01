@@ -1,7 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./index.css";
-import menu from "../../../assets/img/works/collapse.png";
+import user from "../../../assets/img/menu/user-solid.svg";
+import cog from "../../../assets/img/menu/gears-solid.svg";
+import folder from "../../../assets/img/menu/folder-open-regular.svg";
+import contact from "../../../assets/img/menu/envelope-solid.svg";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = React.useState("");
@@ -106,36 +109,48 @@ const Navbar = () => {
         </nav>
         </div>
       </div> */}
-      <div
-        className={`bars ${activeMenu ? "active" : ""}`}
-        id="nav-action"
-        onClick={() => onClickMenu()}
-      >
-        <img src={menu} alt="menu" width={30} />
-      </div>
-      <nav className={activeMenu ? "visible" : ""} id="nav">
+
+      <nav>
         <ul>
-          <li className="shape-circle circle-one">
-            <a onClick={() => scrollToSection("#section-me")}>Home</a>
+          <li
+            className={activeSection === "#section-me" ? "active" : ""}
+            style={{content:activeSection === "#section-me" ? "home" : ""}}
+            onClick={() => scrollToSection("#section-me")}
+          >
+            <div className="about-icon  ">
+              <img src={user} alt="icon" width={30} />
+            </div>
           </li>
-          <li className="shape-circle circle-one">
-            <a onClick={() => scrollToSection("#section-skills")}>
-              Habilidades
-            </a>
+          <li
+            className={
+              activeSection === "#section-skills" ? "active" : ""
+            }
+            onClick={() => scrollToSection("#section-skills")}
+          >
+            <div className="about-icon">
+              <img src={cog} alt="cog" width={30} />
+            </div>
           </li>
-          <li className="shape-circle circle-one">
-            <a onClick={() => scrollToSection("#section-services")}>
-              Servicios
-            </a>
+          <li
+            className={
+              activeSection === "#section-services" ? "active" : ""
+            }
+            onClick={() => scrollToSection("#section-services")}
+          >
+            <div className="about-icon">
+              <img src={folder} alt="folder" width={30} />
+            </div>
           </li>
-          <li className="shape-circle circle-one">
-            <a onClick={() => scrollToSection("#section-contact")}>
-              Contáctame
-            </a>
+          <li
+            className={
+              activeSection === "#section-contact" ? "active" : ""
+            }
+            onClick={() => scrollToSection("#section-contact")}
+          >
+            <div className="about-icon">
+              <img src={contact} alt="contact" width={30} />
+            </div>
           </li>
-        {/*   <li className="shape-circle circle-one">
-            <a className="btn-dark">Más sobre mí</a>
-          </li> */}
         </ul>
       </nav>
     </>
