@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <div className="container">
       <Separator label={"Contáctame"} />
-      <section className="contact scroll-target" id="section-contact">
-        <div className="text">
+      <section className="contact scroll-target " id="section-contact">
+        <div className="text animate__animated animate__bounceInLeft">
           <h2>¡Contáctame!</h2>
           <p>
             Si tienes alguna pregunta o comentario, no dudes en ponerte en
@@ -15,7 +15,7 @@ const Contact = () => {
             de responderte.
           </p>
         </div>
-        <div className="form ">
+        <div className="form  animate__animated animate__bounceInRight">
           <span>Nombre y apellido</span>
           <input type="text" placeholder="Escribe tu nombre completo" />
           <span>Correo electronico</span>

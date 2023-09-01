@@ -12,33 +12,46 @@ import ionic from "../../../assets/img/skills/ionic.avif";
 import Separator from "../../../components/separator/separator";
 
 const Skills = () => {
+  const duration = 2000; // ms
+  const delay = 500; // ms
+
+  const animStr = (i) =>
+    `pulse ${duration}ms ease-out ${delay * (i + 1)}ms forwards infinite`;
   return (
     <div className="container">
       <section className="skills scroll-target" id="section-skills">
         <Separator label={"Habilidades"} />
         <div className="content">
-          <div className="question">
+          <div className="question  animate__animated animate__bounceInLeft">
             <p>
               ¿Qué incluyen mis <br></br> habilidades de programación?
             </p>
             <small>
               Tengo experiencia sólida en programación con JavaScript y
               TypeScript, abarcando el desarrollo front-end usando{" "}
-              <b className="text-secondary"> HTML, CSS, React, Ionic y Angular.</b> Además, domino sistemas
-              de control de versiones como   <b className="text-secondary">Git</b> y la resolución de problemas en
-              entornos de desarrollo. Mi enfoque colaborativo potencia mis
+              <b className="text-secondary">
+                {" "}
+                HTML, CSS, React, Ionic y Angular.
+              </b>{" "}
+              Además, domino sistemas de control de versiones como{" "}
+              <b className="text-secondary">Git</b> y la resolución de problemas
+              en entornos de desarrollo. Mi enfoque colaborativo potencia mis
               habilidades técnicas en proyectos de equipo.
             </small>
           </div>
-          <div className="img-skills">
-            <img src={angular} alt="angular" />
-            <img src={react} alt="react" />
-            <img src={js} alt="js" />
-            <img src={ts} alt="ts" />
-            <img src={html} alt="html" />
-            <img src={css} alt="css" />
-            <img src={sass} alt="sass" />
-            <img src={ionic} alt="ionic" />
+          <div className="img-skills  animate__animated animate__bounceInRight ">
+            <img
+              src={angular}
+              alt="angular"
+              style={{ animation: animStr(0) }}
+            />
+            <img src={react} alt="react" style={{ animation: animStr(1) }} />
+            <img src={js} alt="js" style={{ animation: animStr(2) }} />
+            <img src={ts} alt="ts" style={{ animation: animStr(3) }} />
+            <img src={html} alt="html" style={{ animation: animStr(4) }} />
+            <img src={css} alt="css" style={{ animation: animStr(5) }} />
+            <img src={sass} alt="sass" style={{ animation: animStr(6) }} />
+            <img src={ionic} alt="ionic" style={{ animation: animStr(7) }} />
           </div>
         </div>
       </section>

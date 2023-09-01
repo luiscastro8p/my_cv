@@ -44,7 +44,6 @@
 .work-list .item-work {
   display: flex;
   align-items: center;
-  
 }
 .work-list .item-work .content {
   text-align: center;
@@ -54,7 +53,6 @@
   padding: 30px;
   flex-direction: column;
   width: 100%;
-
 }
 .work-list .item-work h3 {
   margin: 0;
@@ -63,8 +61,10 @@
   display: flex;
   gap: 10px;
 }
-.w-card{
+.w-card {
   width: 30%;
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
 }
 
 .work .content .content-overlay {
@@ -153,18 +153,36 @@
   left: 80%;
 }
 
+@for $i from 1 through $total-items {
+  li:nth-child(#{$i}) {
+    animation-delay: 0.25s * $i;
+  }
+}
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 991px) {
-  .w-card{
+  .w-card {
     width: 100%;
     height: fit-content;
   }
-  .w-card .content{
+  .w-card .content {
     height: 300px;
     background-position: center;
   }
-  .work-list .item-work .work-image{
+  .work-list .item-work .work-image {
     width: 100%;
   }
   .work-list .item-work {

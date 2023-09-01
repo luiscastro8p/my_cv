@@ -27,7 +27,7 @@ const TypingEffect = ({data}) => {
   }, [data, currentWordIndex]);
 
   return (
-    <p className="typing-text typeWriteEffect">
+    <p className="typing-text typeWriteEffect ">
       {typedText}<b className="parpadea">|</b>
     </p>
   );

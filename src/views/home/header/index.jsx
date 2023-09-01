@@ -7,9 +7,11 @@ import folder from "../../../assets/img/menu/folder-open-regular.svg";
 import contact from "../../../assets/img/menu/envelope-solid.svg";
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = React.useState("");
+  const [activeSection, setActiveSection] = React.useState("#section-me");
   const [activeClassHeader, setActiveClassHeader] = React.useState("");
   const [activeMenu, setActiveMenu] = React.useState(false);
+  const [currentSection, setCurrentSection] = React.useState("#section-me");
+  console.log(currentSection);
 
   React.useEffect(() => {
     const sections = [
@@ -32,6 +34,12 @@ const Navbar = () => {
             } else {
               setActiveClassHeader("");
             }
+
+            if (sectionId !== currentSection) {
+              setTimeout(() => {
+                setCurrentSection(sectionId);
+              }, 100);
+            }
             setActiveSection(sectionId);
             break;
           }
@@ -45,6 +53,17 @@ const Navbar = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    console.log("cambio");
+    /*    const section = document.querySelector(currentSection);
+    section.classList.add("animate__animated");
+    section.classList.add("animate__fadeIn");
+    setTimeout(() => {
+      section.classList.remove("animate__animated");
+      section.classList.remove("animate__fadeIn");
+    }, 1000); */
+  }, [currentSection]);
+
   const scrollToSection = (sectionId) => {
     const section = document.querySelector(sectionId);
     if (section) {
@@ -57,101 +76,44 @@ const Navbar = () => {
   };
   return (
     <>
-      {/* <div className={`position-header ${activeClassHeader}`}>
-        <div className="container header">
-          <p className="text">
-            <b>Portafolio </b> /Luis Castro{" "}
-          </p>
-            <nav className="menu">
-          <ul>
-            <li>
-              <a
-                data-item="Home"
-                onClick={() => scrollToSection("#section-me")}
-                className={activeSection === "#section-me" ? "active" : ""}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                data-item="Habilidades"
-                onClick={() => scrollToSection("#section-skills")}
-                className={activeSection === "#section-skills" ? "active" : ""}
-              >
-                Habilidades
-              </a>
-            </li>
-            <li>
-              <a
-                data-item="Servicios"
-                onClick={() => scrollToSection("#section-services")}
-                className={
-                  activeSection === "#section-services" ? "active" : ""
-                }
-              >
-                Servicios
-              </a>
-            </li>
-            <li>
-              <a
-                data-item="Contacto"
-                onClick={() => scrollToSection("#section-contact")}
-                className={activeSection === "#section-contact" ? "active" : ""}
-              >
-                Contáctame
-              </a>
-            </li>
-            <li>
-              <button className="btn-dark">Más sobre mí</button>
-            </li>
-          </ul>
-        </nav>
-        </div>
-      </div> */}
-
       <nav>
         <ul>
           <li
             className={activeSection === "#section-me" ? "active" : ""}
             onClick={() => scrollToSection("#section-me")}
           >
-            <div  >
+            <div>
               <img src={user} alt="icon" width={30} />
             </div>
           </li>
           <li
-            className={
-              activeSection === "#section-skills" ? "active" : ""
-            }
+            className={activeSection === "#section-skills" ? "active" : ""}
             onClick={() => scrollToSection("#section-skills")}
           >
-            <div >
+            <div>
               <img src={cog} alt="cog" width={30} />
             </div>
           </li>
           <li
-            className={
-              activeSection === "#section-services" ? "active" : ""
-            }
+            className={activeSection === "#section-services" ? "active" : ""}
             onClick={() => scrollToSection("#section-services")}
           >
-            <div >
+            <div>
               <img src={folder} alt="folder" width={30} />
             </div>
           </li>
           <li
-            className={
-              activeSection === "#section-contact" ? "active" : ""
-            }
+            className={activeSection === "#section-contact" ? "active" : ""}
             onClick={() => scrollToSection("#section-contact")}
           >
-            <div >
+            <div>
               <img src={contact} alt="contact" width={30} />
             </div>
           </li>
+          <li></li>
         </ul>
       </nav>
+      
     </>
   );
 };

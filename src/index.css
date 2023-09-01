@@ -5,12 +5,14 @@
   --secondary: #668a4c;
   --secondary-light: #accc7b;
 }
+
 body {
   margin: 0;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter",
     "Lucida Typewriter", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 .text-secondary {
   color: var(--secondary);

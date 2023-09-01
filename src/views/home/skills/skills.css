@@ -38,9 +38,7 @@
   border-radius: 30px;
   cursor: pointer;
 }
-.skills .content .img-skills img:hover {
-  box-shadow: 1px 1px 6px 2px var(--secondary-light);
-}
+
 
 @media (max-width: 991px) {
   .skills .question p{

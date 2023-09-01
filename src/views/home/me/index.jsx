@@ -13,17 +13,21 @@ const Me = () => {
       <div className="container">
         <div className="home">
           <div className="home-body">
-            <div className="content-text">
-              <h2>Hola, soy <br></br> Luis Castro</h2>
-              <TypingEffect
-                data={[
-                  "Desarrollador web",
-                  "Ing. informático",
-                  "Técnico en computación",
-                ]}
-              />
-            {/*   <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small> */}
-              <div className="buttons-body">
+            <div className="content-text ">
+              <div className="animate__animated animate__fadeInLeft animate__fast">
+                <h2>
+                  Hola, soy <br></br> Luis Castro
+                </h2>
+                <TypingEffect
+                  data={[
+                    "Desarrollador web",
+                    "Ing. informático",
+                    "Técnico en computación",
+                  ]}
+                />
+              </div>
+              {/*   <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small> */}
+              <div className="buttons-body animate__animated animate__fadeInLeft animate__faster">
                 <button className="btn-dark">Más sobre mí</button>
                 <button className="btn-white">
                   Resumen
@@ -35,7 +39,7 @@ const Me = () => {
                   />
                 </button>
               </div>
-              <div className="img-body">
+              <div className="img-body ">
                 <a
                   href="https://github.com/luiscastro8p"
                   target="_blank"
@@ -60,7 +64,7 @@ const Me = () => {
               </div>
             </div>
           </div>
-          <div className="content-image">
+          <div className="content-image animate__animated animate__fadeInTopRight">
             <div style={{ position: "relative" }}>
               <div className="img-profile">
                 <div className="small-point" />
@@ -68,7 +72,6 @@ const Me = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>

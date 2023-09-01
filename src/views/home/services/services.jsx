@@ -28,8 +28,7 @@ const Services = () => {
     {
       title: "nas",
       img: nas,
-      description: `plataforma para acuicultura que supervisa y controla 
-      las alimentadoras de camarones, asegurando un seguimiento preciso y eficiente.`,
+      description: `Plataforma acuicola para monitoreo, supervicion y control para granjas.`,
       tecnology: [1, 7, 3, 4],
     },
     {
@@ -89,8 +88,14 @@ const Services = () => {
       tecnology: [1, 7, 3, 4],
     },
   ];
+
+  const duration = 300; // ms
+  const delay = 100; // ms
+
+  const animStr = (i) =>
+    `pulse ${duration}ms ease-out ${delay * (i + 1)}ms forwards`;
   return (
-    <div className="container"> 
+    <div className="container">
       <section className="services scroll-target" id="section-services">
         <Separator label={"Servicios"} />
         <p>Éstos son algunos de mis trabajos.</p>
@@ -119,7 +124,11 @@ const Services = () => {
             <div className="work">
               {works.map((item, idx) => {
                 return (
-                  <div className="card w-card" key={idx}>
+                  <div
+                    className={`card w-card`}
+                    key={idx}
+                    style={{ animation: animStr(idx) }}
+                  >
                     <div
                       className="content"
                       style={{ backgroundImage: `url("${item.img}")` }}
@@ -151,8 +160,16 @@ const Services = () => {
             <div className="work-list">
               {works.map((item, idx) => {
                 return (
-                  <div className="item-work card" key={idx}>
-                    <img className="work-image" src={item.img} alt={item.title} />
+                  <div
+                    className="item-work card"
+                    key={idx}
+                    style={{ animation: animStr(idx) }}
+                  >
+                    <img
+                      className="work-image"
+                      src={item.img}
+                      alt={item.title}
+                    />
 
                     <div className="content">
                       <div className="text">
