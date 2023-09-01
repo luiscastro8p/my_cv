@@ -119,7 +119,7 @@ const Services = () => {
             <div className="work">
               {works.map((item, idx) => {
                 return (
-                  <div className="card" key={idx}>
+                  <div className="card w-card" key={idx}>
                     <div
                       className="content"
                       style={{ backgroundImage: `url("${item.img}")` }}

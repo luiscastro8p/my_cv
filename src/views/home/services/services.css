@@ -17,7 +17,7 @@
   overflow: hidden;
   border-radius: 10px;
   height: 176px;
-  width: 376px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -44,7 +44,7 @@
 .work-list .item-work {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  
 }
 .work-list .item-work .content {
   text-align: center;
@@ -53,7 +53,7 @@
   align-items: center;
   padding: 30px;
   flex-direction: column;
-  width: 34%;
+  width: 100%;
 
 }
 .work-list .item-work h3 {
@@ -62,6 +62,9 @@
 .work-list .item-work .tecnologies {
   display: flex;
   gap: 10px;
+}
+.w-card{
+  width: 30%;
 }
 
 .work .content .content-overlay {
@@ -148,4 +151,27 @@
 
 .fadeIn-right {
   left: 80%;
+}
+
+
+
+@media (max-width: 991px) {
+  .w-card{
+    width: 100%;
+    height: fit-content;
+  }
+  .w-card .content{
+    height: 300px;
+    background-position: center;
+  }
+  .work-list .item-work .work-image{
+    width: 100%;
+  }
+  .work-list .item-work {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
 }

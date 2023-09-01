@@ -66,3 +66,26 @@ textarea:focus-visible {
 .contact p {
   margin: 0;
 }
+
+@media (max-width: 991px) {
+ .contact{
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+ }
+ .contact .text{
+  margin-top: 30px;
+  width: 100%;
+ }
+ .contact .form{
+  margin-top: 20px;
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+

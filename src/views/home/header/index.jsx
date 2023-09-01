@@ -114,10 +114,9 @@ const Navbar = () => {
         <ul>
           <li
             className={activeSection === "#section-me" ? "active" : ""}
-            style={{content:activeSection === "#section-me" ? "home" : ""}}
             onClick={() => scrollToSection("#section-me")}
           >
-            <div className="about-icon  ">
+            <div  >
               <img src={user} alt="icon" width={30} />
             </div>
           </li>
@@ -127,7 +126,7 @@ const Navbar = () => {
             }
             onClick={() => scrollToSection("#section-skills")}
           >
-            <div className="about-icon">
+            <div >
               <img src={cog} alt="cog" width={30} />
             </div>
           </li>
@@ -137,7 +136,7 @@ const Navbar = () => {
             }
             onClick={() => scrollToSection("#section-services")}
           >
-            <div className="about-icon">
+            <div >
               <img src={folder} alt="folder" width={30} />
             </div>
           </li>
@@ -147,7 +146,7 @@ const Navbar = () => {
             }
             onClick={() => scrollToSection("#section-contact")}
           >
-            <div className="about-icon">
+            <div >
               <img src={contact} alt="contact" width={30} />
             </div>
           </li>

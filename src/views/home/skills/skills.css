@@ -1,4 +1,3 @@
-
 .skills .content {
   display: flex;
   align-items: center;
@@ -41,4 +40,26 @@
 }
 .skills .content .img-skills img:hover {
   box-shadow: 1px 1px 6px 2px var(--secondary-light);
+}
+
+@media (max-width: 991px) {
+  .skills .question p{
+    font-size: 25px;
+  }
+  .skills .content {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .skills .content .question {
+    flex: 100%;
+    margin-top: 30px;
+  }
+  .skills .content .img-skills {
+    flex: 100%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
 }

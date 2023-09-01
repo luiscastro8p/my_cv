@@ -1,86 +1,8 @@
-.position-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
-  background: white;
-}
-
-.header-active {
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 700;
-  background: transparent;
-}
-
-.header .text {
-  font-size: 20px;
-  font-weight: 100;
-}
-.header .text b {
-  font-weight: 700;
-}
-.header .menu ul {
-  list-style: none;
-  display: flex;
-  margin: 0px;
-}
-
-.header .menu ul li {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-.header nav {
-  list-style: none;
-  display: flex;
-}
-
-.header nav li a {
-  text-decoration: none;
-  color: #8f8f8f;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-  cursor: pointer;
-}
-/* .header nav li a::before {
-  content: attr(data-item);
-  transition: 0.5s;
-  color: var(--secondary-light);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0;
-  overflow: hidden;
-}
-.header nav li a:hover::before {
-  width: 100%;
-  transition: all 0.4s ease-in-out;
-}
-
-.header nav li .active {
-  transition: 0.5s;
-  width: 100%;
-  color: var(--secondary-light) !important;
-}
- */
-
 nav {
-  float: left;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  background: transparent;
 }
 
 nav ul {
@@ -143,8 +65,7 @@ nav ul li:hover:after {
   transform: perspective(400px) rotateY(0deg) scale(1);
 }
 
-nav ul .active  {
-  
+nav ul .active {
   transform: translateX(-70px);
 }
 nav ul .active:after {
@@ -160,4 +81,47 @@ nav ul li > div {
 
 nav ul li div {
   position: relative;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    z-index: 1;
+    bottom: 0 !important;
+    top: auto;
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    width: 100%;
+    background-color: var(--secondary-light);
+    justify-content: space-around;
+  }
+
+  nav ul .active {
+    background-color: white;
+  }
+  nav ul li::after {
+    display: none;
+  }
+  nav ul li:hover:after {
+    display: none;
+  }
+  nav ul li:hover {
+    transform: none;
+  }
+  nav ul .active {
+    transform: none;
+  }
+
+  nav ul li > div {
+    display: inline-block;
+    padding: 10px 0;
+    background: transparent;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
 }

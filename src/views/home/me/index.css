@@ -1,6 +1,5 @@
-.background-home{
-  padding-top: 200px;
-
+.background-home {
+  padding-top: 5%;
 }
 .home {
   display: flex;
@@ -8,7 +7,6 @@
   flex-wrap: wrap;
   width: 100%;
   padding-bottom: 50px;
-
 }
 .home .home-body {
   display: flex;
@@ -31,11 +29,11 @@
 .home .home-body h2 {
   user-select: none;
   font-weight: 800;
-  font-family: 'Anton';
+  font-family: "Anton";
   font-size: 70px;
   margin: 0;
-  letter-spacing:4px;
-  line-height:1.1;
+  letter-spacing: 4px;
+  line-height: 1.1;
 }
 .typeWriteEffect {
   font-size: 2.25rem;
@@ -49,8 +47,8 @@
 }
 .img-profile {
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 44vh;
+  height: 44vh;
   background-color: var(--secondary-light);
 
   z-index: -1;
@@ -74,7 +72,7 @@
   height: 40px;
   content: "";
   background-color: var(--dark);
-  
+
   display: block;
   border-radius: 100%;
   bottom: 96%;
@@ -98,7 +96,7 @@
   height: 10%;
   content: "";
   background-color: var(--dark);
-  
+
   display: block;
   border-radius: 100%;
   position: absolute;
@@ -124,4 +122,31 @@
   cursor: pointer;
   object-fit: contain;
   mix-blend-mode: color-burn;
+}
+
+@media (max-width: 991px) {
+  .background-home {
+    padding-top: 10%;
+  }
+  .home {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .home .content-image {
+    justify-content: center;
+    width: 100%;
+    flex: 100%;
+  }
+  .home .img-profile {
+    width: 30vh;
+    height: 30vh;
+  }
+  .home .content-text h2{
+    font-size: 38px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
 }
