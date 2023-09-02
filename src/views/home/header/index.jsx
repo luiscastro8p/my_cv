@@ -1,21 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./index.css";
-import user from "../../../assets/img/menu/user-solid.svg";
+import home from "../../../assets/img/menu/home.svg";
 import cog from "../../../assets/img/menu/gears-solid.svg";
 import folder from "../../../assets/img/menu/folder-open-regular.svg";
 import contact from "../../../assets/img/menu/envelope-solid.svg";
+import address from "../../../assets/img/menu/address.svg";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = React.useState("#section-me");
-  const [activeClassHeader, setActiveClassHeader] = React.useState("");
-  const [activeMenu, setActiveMenu] = React.useState(false);
   const [currentSection, setCurrentSection] = React.useState("#section-me");
-  console.log(currentSection);
 
   React.useEffect(() => {
     const sections = [
       "#section-me",
+      "#about-me",
       "#section-skills",
       "#section-services",
       "#section-contact",
@@ -29,12 +28,6 @@ const Navbar = () => {
           const sectionBottom = sectionTop + section.clientHeight;
 
           if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            if (sectionId !== "#section-me") {
-              setActiveClassHeader("header-active");
-            } else {
-              setActiveClassHeader("");
-            }
-
             if (sectionId !== currentSection) {
               setTimeout(() => {
                 setCurrentSection(sectionId);
@@ -53,17 +46,6 @@ const Navbar = () => {
     };
   }, []);
 
-  React.useEffect(() => {
-    console.log("cambio");
-    /*    const section = document.querySelector(currentSection);
-    section.classList.add("animate__animated");
-    section.classList.add("animate__fadeIn");
-    setTimeout(() => {
-      section.classList.remove("animate__animated");
-      section.classList.remove("animate__fadeIn");
-    }, 1000); */
-  }, [currentSection]);
-
   const scrollToSection = (sectionId) => {
     const section = document.querySelector(sectionId);
     if (section) {
@@ -71,9 +53,6 @@ const Navbar = () => {
     }
   };
 
-  const onClickMenu = () => {
-    setActiveMenu(!activeMenu);
-  };
   return (
     <>
       <nav>
@@ -83,7 +62,15 @@ const Navbar = () => {
             onClick={() => scrollToSection("#section-me")}
           >
             <div>
-              <img src={user} alt="icon" width={30} />
+              <img src={home} alt="icon" width={30} />
+            </div>
+          </li>
+          <li
+            className={activeSection === "#about-me" ? "active" : ""}
+            onClick={() => scrollToSection("#about-me")}
+          >
+            <div>
+              <img src={address} alt="icon" width={30} />
             </div>
           </li>
           <li
@@ -110,10 +97,8 @@ const Navbar = () => {
               <img src={contact} alt="contact" width={30} />
             </div>
           </li>
-          <li></li>
         </ul>
       </nav>
-      
     </>
   );
 };

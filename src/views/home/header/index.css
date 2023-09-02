@@ -34,25 +34,28 @@ nav ul li:after {
   padding-left: 10px;
   padding-right: 10px;
   left: 70px;
-  width: fit-content;
   height: 100%;
   opacity: 0.5;
   transform: perspective(400px) rotateY(90deg);
   transform-origin: 0 100%;
   transition: all 0.4s ease-out;
   line-height: 88px;
+  width: max-content;
 }
 
 nav ul li:nth-child(1):after {
   content: "Inicio";
 }
 nav ul li:nth-child(2):after {
-  content: "Habilidades";
+  content: "Sobre mi";
 }
 nav ul li:nth-child(3):after {
-  content: "Servicios";
+  content: "Habilidades";
 }
 nav ul li:nth-child(4):after {
+  content: "Servicios";
+}
+nav ul li:nth-child(5):after {
   content: "Contáctame";
 }
 

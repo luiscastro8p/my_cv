@@ -15,7 +15,7 @@ const Contact = () => {
             de responderte.
           </p>
         </div>
-        <div className="form  animate__animated animate__bounceInRight">
+        <div className="form animate__animated animate__bounceInRight">
           <span>Nombre y apellido</span>
           <input type="text" placeholder="Escribe tu nombre completo" />
           <span>Correo electronico</span>

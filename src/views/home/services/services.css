@@ -153,26 +153,6 @@
   left: 80%;
 }
 
-@for $i from 1 through $total-items {
-  li:nth-child(#{$i}) {
-    animation-delay: 0.25s * $i;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    top: 100px;
-  }
-  75% {
-    opacity: 0.5;
-    top: 0px;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @media (max-width: 991px) {
   .w-card {
     width: 100%;

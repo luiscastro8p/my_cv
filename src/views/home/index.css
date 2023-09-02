@@ -3,26 +3,16 @@
   padding-left: 17px;
   margin-right: auto;
   margin-left: auto;
-
+  width: 80%;
 }
 
-.card{
-  box-shadow: 1px 2px 14px 1px rgba(0,0,0,0.2);
+.card {
+  box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+    width: 90%;
   }
 }

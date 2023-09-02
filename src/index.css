@@ -71,6 +71,7 @@ body {
   margin: 0;
   font-weight: 100;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 .separation .line {
