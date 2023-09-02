@@ -32,16 +32,17 @@ const AboutMe = () => {
     return `${experiencieYear} años`;
   }
   return (
-    <div className="container">
+    <>
       <Separator label={"Sobre mí"} />
-      <section className="background-home scroll-target" id="about-me">
+      <section className="background-about scroll-target" id="about-me">
         <div className="container">
           <div className="about">
-            <div className="content-image">
+            <div className="content-image animate__animated animate__fadeInLeft animate__fast">
               <img src={perfil} alt="perfil" width={300} />
             </div>
             <div className="about-body">
-              <div>
+              <div className=" animate__animated animate__fadeInTopRight ">
+                <p className="title">Datos personales</p>
                 <p>
                   Nombre: <b>Luis Armando Castro Cota</b>
                 </p>
@@ -60,9 +61,8 @@ const AboutMe = () => {
                   <b> Mid-level</b>
                 </p>
               </div>
-
-              <div className="content-text animate__animated animate__fadeInLeft animate__fast ">
-                <p>
+              <div className="content-text  ">
+                <p className="animate__animated animate__fadeInRight animate__fast">
                   Desarrollador web entusiasta, abierto al aprendizaje. Mi
                   pasión por crear soluciones digitales se combina con un deseo
                   constante de aprender y mejorar. Siempre estoy listo para
@@ -74,7 +74,7 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
