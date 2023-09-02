@@ -10,6 +10,8 @@ import css from "../../../assets/img/skills/css.svg";
 import sass from "../../../assets/img/skills/sass.png";
 import ionic from "../../../assets/img/skills/ionic.avif";
 import Separator from "../../../components/separator/separator";
+import github from "../../../assets/img/skills/git.png";
+
 
 const Skills = () => {
   const duration = 2000; // ms
@@ -52,6 +54,8 @@ const Skills = () => {
             <img src={css} alt="css" style={{ animation: animStr(5) }} />
             <img src={sass} alt="sass" style={{ animation: animStr(6) }} />
             <img src={ionic} alt="ionic" style={{ animation: animStr(7) }} />
+            <img src={github} alt="github" style={{ animation: animStr(8) }} />
+
           </div>
         </div>
       </section>

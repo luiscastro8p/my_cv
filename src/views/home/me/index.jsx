@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.css";
 import TypingEffect from "../../../components/typeWriteEffect";
-import github from "../../../assets/img/github.png";
+import github from "../../../assets/img/github.svg";
 
-import facebook from "../../../assets/img/facebook.png";
-import instagram from "../../../assets/img/instagram.png";
-import download from "../../../assets/img/download.png";
-
+import facebook from "../../../assets/img/facebook.svg";
+import instagram from "../../../assets/img/instagram.svg";
+import download from "../../../assets/img/download.svg";
+import portafolio from '../../../assets/portafolio.pdf'
 const Me = () => {
   return (
     <section className="background-home scroll-target" id="section-me">
@@ -29,7 +29,12 @@ const Me = () => {
               {/*   <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small> */}
               <div className="buttons-body animate__animated animate__fadeInLeft animate__faster">
                 <button className="btn-dark">Más sobre mí</button>
-                <button className="btn-white">
+                <a
+                  className="btn-white"
+                  href={portafolio}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Resumen
                   <img
                     src={download}
@@ -37,8 +42,9 @@ const Me = () => {
                     width={13}
                     style={{ marginLeft: "8px" }}
                   />
-                </button>
+                </a>
               </div>
+
               <div className="img-body ">
                 <a
                   href="https://github.com/luiscastro8p"

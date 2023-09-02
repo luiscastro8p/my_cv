@@ -105,9 +105,13 @@
 }
 
 .buttons-body {
+  
   display: flex;
   gap: 30px;
   margin-top: 30px;
+}
+.buttons-body a{
+  text-decoration: none;
 }
 
 .img-body {
