@@ -6,7 +6,6 @@ import Skills from "./skills/skills";
 import Services from "./services/services";
 import Contact from "./contact/contact";
 import Footer from "./footer/footer";
-import 'animate.css';
 import AboutMe from "./about_me/about_me";
 const Home = () => {
   return (

@@ -18,6 +18,7 @@ const Tecnologies = ({ data }) => {
       {data === 5 && <img src={html} alt="html" width={20} height={20} />}
       {data === 6 && <img src={js} alt="js" width={20} height={20} />}
       {data === 7 && <img src={ts} alt="ts" width={20} height={20} />}
+      
     </>
   );
 };
