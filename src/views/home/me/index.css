@@ -105,7 +105,6 @@
 }
 
 .buttons-body {
-  
   display: flex;
   gap: 30px;
   margin-top: 30px;
@@ -148,8 +147,18 @@
     font-size: 38px;
     margin-top: 30px;
   }
+  .typeWriteEffect{
+    font-size: 1.25rem;
+  }
+  .buttons-body{
+    margin-top: 15px!important;
+  }
+
 }
 @media (min-width: 992px) {
+  .typeWriteEffect{
+    font-size: 1.50rem;
+  }
 }
 @media (min-width: 1200px) {
 }

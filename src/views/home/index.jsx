@@ -9,13 +9,15 @@ import Footer from "./footer/footer";
 import AboutMe from "./about_me/about_me";
 const Home = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div>
+      <div className="container" style={{ position: "relative" }}>
       <Header />
       <Me />
       <AboutMe/>
       <Skills />
       <Services />
       <Contact/>
+    </div>
       <Footer/>
     </div>
   );

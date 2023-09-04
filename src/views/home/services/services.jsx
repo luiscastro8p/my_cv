@@ -95,7 +95,7 @@ const Services = () => {
   const animStr = (i) =>
     `pulse ${duration}ms ease-out ${delay * (i + 1)}ms forwards`;
   return (
-    <div className="container">
+    <>
       <section className="services scroll-target" id="section-services">
         <Separator label={"Servicios"} />
         <p>Éstos son algunos de mis trabajos.</p>
@@ -193,7 +193,7 @@ const Services = () => {
           )}
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

@@ -20,7 +20,7 @@ const Skills = () => {
   const animStr = (i) =>
     `pulse ${duration}ms ease-out ${delay * (i + 1)}ms forwards infinite`;
   return (
-    <div className="container">
+    <>
       <section className="skills scroll-target" id="section-skills">
         <Separator label={"Habilidades"} />
         <div className="content">
@@ -59,7 +59,7 @@ const Skills = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

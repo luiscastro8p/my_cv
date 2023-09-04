@@ -4,7 +4,7 @@ import Separator from "../../../components/separator/separator";
 
 const Contact = () => {
   return (
-    <div className="container">
+    <>
       <Separator label={"Contáctame"} />
       <section className="contact scroll-target " id="section-contact">
         <div className="text animate__animated animate__bounceInLeft">
@@ -30,7 +30,7 @@ const Contact = () => {
           <button>Enviar</button>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
