@@ -69,7 +69,7 @@ const Me = () => {
                 <img src={instagram} alt="instagram" />
               </a>
               <a
-                href="https://www.instagram.com/luiscastro8p"
+                href="https://wa.me/+526683977444"
                 target="_blank"
                 rel="noreferrer"
               >
