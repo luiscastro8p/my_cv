@@ -27,7 +27,11 @@ const Contact = () => {
             rows="3"
             placeholder="Descripcion"
           ></textarea>
-          <button>Enviar</button>
+          <span className="text-danger">
+            Formulario actualmente deshabilitado contactame por mis redes
+            sociales o un correo a luisarmandocastro12@gmail.com
+          </span>
+          {/*    <button disabled>Enviar</button> */}
         </div>
       </section>
     </>

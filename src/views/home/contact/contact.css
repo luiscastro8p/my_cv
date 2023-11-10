@@ -26,7 +26,7 @@
 input,
 textarea {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter",
-  "Lucida Typewriter", monospace;
+    "Lucida Typewriter", monospace;
   border-radius: 5px;
   border: 1px solid var(--secondary-light);
   box-shadow: 1px 0px 3px 0px var(--secondary-light);
@@ -35,7 +35,8 @@ textarea {
   padding: 10px;
   user-select: none;
 }
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
 }
@@ -43,7 +44,7 @@ input,
 textarea:focus-visible {
   outline: none;
 }
-.form button{
+.form button {
   background-color: var(--secondary-light);
   border: 1px solid var(--secondary-light);
   padding: 10px;
@@ -53,9 +54,13 @@ textarea:focus-visible {
   cursor: pointer;
   color: var(--white);
 }
-.form button:hover{
+.form button:hover {
   color: var(--secondary);
   box-shadow: 1px 0px 3px 0px var(--secondary-light);
+}
+.text-danger{
+  color: red!important;
+  font-size: 13px;
 }
 .contact .text h2 {
   font-weight: 100;
@@ -66,26 +71,24 @@ textarea:focus-visible {
 .contact p {
   margin: 0;
 }
-
 @media (max-width: 991px) {
- .contact{
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
- }
- .contact .text{
-  margin-top: 30px;
-  width: 100%;
- }
- .contact .form{
-  margin-top: 20px;
-  width: 100%;
-  padding: 0px;
-  margin-bottom: 20px;
-}
+  .contact {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  .contact .text {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .contact .form {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 992px) {
 }
 @media (min-width: 1200px) {
 }
-
