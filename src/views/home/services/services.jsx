@@ -16,8 +16,6 @@ import Tecnologies from "../../../components/tecnologies/tecnologies";
 
 const Services = ({ darkMode }) => {
   const [mode, setMode] = React.useState(false);
-  console.log(darkMode)
-
   /* 1:angular
      2:react
      3:boostrap

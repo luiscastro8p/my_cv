@@ -44,7 +44,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [currentSection]);
 
   const scrollToSection = (sectionId) => {
     const section = document.querySelector(sectionId);

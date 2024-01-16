@@ -12,39 +12,38 @@ import Sun from '../../assets/img/Sun.png'
 
 const Home = () => {
   const [darkMode, setDarkMode] = React.useState(false)
-  const default_color = {
-    '--primary': '#30391f',
-    '--dark': 'black',
-    '--white': '#ffffff',
-    '--secondary': '#668a4c',
-    '--secondary-light': '#accc7b',
-    '--background': 'white',
-    '--gray': '#9d9c9c',
-    '--gray-light': '#9d9c9c40'
-  }
-  const dark_color = {
-    '--primary': '#697d4b',
-    '--dark': 'white',
-    '--white': 'black',
-    '--secondary': '#668a4c',
-    '--secondary-light': '#accc7b',
-    '--background': 'black',
-    '--gray': '#9d9c9c',
-    '--gray-light': '#9d9c9c40'
-  }
-
   React.useEffect(() => {
-    if (darkMode) {
-      for (const key in dark_color) {
-        const element = dark_color[key];
-        document.documentElement.style.setProperty(key, element);
-      }
-    } else {
-      for (const key in default_color) {
-        const element = default_color[key];
-        document.documentElement.style.setProperty(key, element);
+    const default_color = {
+      '--primary': '#30391f',
+      '--dark': 'black',
+      '--white': '#ffffff',
+      '--background': 'white',
+      '--gray': '#9d9c9c',
+      '--gray-light': '#9d9c9c40'
+    }
+    const dark_color = {
+      '--primary': '#697d4b',
+      '--dark': 'white',
+      '--white': 'black',
+      '--background': 'black',
+      '--gray': '#9d9c9c',
+      '--gray-light': '#9d9c9c40'
+    }
+    const rootElement = document.documentElement
+    if (dark_color || default_color) {
+      if (darkMode) {
+        for (const key in dark_color) {
+          const dark = dark_color[key];
+          rootElement.style.setProperty(key, dark);
+        }
+      } else {
+        for (const key in default_color) {
+          const def = default_color[key];
+          rootElement.style.setProperty(key, def);
+        }
       }
     }
+    return () => { }
   }, [darkMode])
 
   const handleOnClick = () => {
