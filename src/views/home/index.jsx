@@ -7,18 +7,65 @@ import Services from "./services/services";
 import Contact from "./contact/contact";
 import Footer from "./footer/footer";
 import AboutMe from "./about_me/about_me";
+import moon from '../../assets/img/moon.jpg'
+import Sun from '../../assets/img/Sun.png'
+
 const Home = () => {
+  const [darkMode, setDarkMode] = React.useState(false)
+  const default_color = {
+    '--primary': '#30391f',
+    '--dark': 'black',
+    '--white': '#ffffff',
+    '--secondary': '#668a4c',
+    '--secondary-light': '#accc7b',
+    '--background': 'white',
+    '--gray': '#9d9c9c',
+    '--gray-light': '#9d9c9c40'
+  }
+  const dark_color = {
+    '--primary': '#697d4b',
+    '--dark': 'white',
+    '--white': 'black',
+    '--secondary': '#668a4c',
+    '--secondary-light': '#accc7b',
+    '--background': 'black',
+    '--gray': '#9d9c9c',
+    '--gray-light': '#9d9c9c40'
+  }
+
+  React.useEffect(() => {
+    if (darkMode) {
+      for (const key in dark_color) {
+        const element = dark_color[key];
+        document.documentElement.style.setProperty(key, element);
+      }
+    } else {
+      for (const key in default_color) {
+        const element = default_color[key];
+        document.documentElement.style.setProperty(key, element);
+      }
+    }
+  }, [darkMode])
+
+  const handleOnClick = () => {
+    setDarkMode(!darkMode)
+  }
   return (
     <div>
       <div className="container" style={{ position: "relative" }}>
-      <Header />
-      <Me />
-      <AboutMe/>
-      <Skills />
-      <Services />
-      <Contact/>
-    </div>
-      <Footer/>
+        <div className="float-bottom" onClick={() => handleOnClick()} >
+          Cambiar el modo
+          <img src={darkMode ? Sun : moon} alt="moon" width={30} />
+        </div>
+
+        <Header />
+        <Me />
+        <AboutMe />
+        <Skills />
+        <Services darkMode={darkMode} />
+        <Contact />
+      </div>
+      <Footer />
     </div>
   );
 };

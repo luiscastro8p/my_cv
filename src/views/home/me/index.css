@@ -34,6 +34,7 @@
   margin: 0;
   letter-spacing: 4px;
   line-height: 1.1;
+  color: var(--dark);
 }
 .typeWriteEffect {
   font-size: 2.25rem;
@@ -57,7 +58,7 @@
   height: 100%;
   content: "";
   background: url(../../../assets/img/perfil.png);
-  filter: drop-shadow(1px 8px 12px black);
+  filter: drop-shadow(1px 1px 8px var(--dark));
   background-size: cover;
   display: block;
   border-radius: 0px 0 50% 50%;
@@ -135,6 +136,7 @@
     justify-content: center;
   }
   .home .content-image {
+    margin-top: 20px;
     justify-content: center;
     width: 100%;
     flex: 100%;

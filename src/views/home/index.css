@@ -7,10 +7,23 @@
 }
 
 .card {
-  box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 14px 1px var(--gray-light);
   border-radius: 20px;
 }
-
+.float-bottom{
+  font-family: "Anton";
+  position: absolute;
+  right: 5%;
+  top: 20px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--dark);
+  user-select: none;
+}
 @media (max-width: 768px) {
   .container {
     width: 90%;

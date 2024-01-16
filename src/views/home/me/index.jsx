@@ -14,7 +14,7 @@ const Me = () => {
     <section className="background-home scroll-target" id="section-me">
       <div className="home">
         <div className="home-body">
-          <div className="content-text ">
+          <div className="content-text">
             <div className="animate__animated animate__fadeInLeft animate__fast">
               <h2>
                 Hola, soy <br></br> Luis Castro

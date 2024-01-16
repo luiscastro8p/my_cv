@@ -14,8 +14,9 @@ import collapse from "../../../assets/img/works/collapse.png";
 import points from "../../../assets/img/works/points.png";
 import Tecnologies from "../../../components/tecnologies/tecnologies";
 
-const Services = () => {
+const Services = ({ darkMode }) => {
   const [mode, setMode] = React.useState(false);
+  console.log(darkMode)
 
   /* 1:angular
      2:react
@@ -118,6 +119,7 @@ const Services = () => {
               onClick={() => setMode(true)}
             />
           )}
+          {darkMode && <p>'gola'</p>}
         </div>
         <div className="center">
           {!mode && (

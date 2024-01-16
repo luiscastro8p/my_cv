@@ -1,5 +1,6 @@
 .services {
   height: fit-content;
+  color: var(--dark);
 }
 
 .work {
@@ -128,6 +129,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--dark);
 }
 .content-name div {
   display: flex;

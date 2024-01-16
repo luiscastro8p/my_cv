@@ -28,7 +28,7 @@ nav ul li {
 
 nav ul li:after {
   position: absolute;
-  background: black;
+  background: dark;
   color: var(--secondary-light);
   top: 0;
   padding-left: 10px;

@@ -15,7 +15,7 @@
   padding: 20px;
   border-radius: 10px;
   margin-top: 30px;
-
+  color: var(--dark);
 }
 .about .about-body {
   display: flex;
@@ -59,7 +59,7 @@
   z-index: -1;
 }
 .about img {
-  filter: drop-shadow(9px 0px 3px var(--secondary-light));
+  filter: drop-shadow(1px 1px 8px var(--dark));
   /*   border-bottom: 4px solid; */
   padding-bottom: 5px;
   border-radius: 5%;

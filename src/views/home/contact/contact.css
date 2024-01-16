@@ -9,6 +9,7 @@
 
 .contact .text {
   width: 50%;
+  color: var(--dark);
 }
 .contact .form {
   width: 50%;
@@ -19,7 +20,8 @@
   padding: 40px;
 }
 .contact .form span {
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--dark);
+  opacity: 0.6;
   font-weight: 700;
   user-select: none;
 }

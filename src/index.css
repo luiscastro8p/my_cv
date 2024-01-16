@@ -4,6 +4,11 @@
   --white: #ffffff;
   --secondary: #668a4c;
   --secondary-light: #accc7b;
+  --background:white;
+  --gray: #9d9c9c;
+  --gray-light: #9d9c9c;
+
+
 }
 
 body {
@@ -13,6 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color:  var(--background);;
 }
 
 @import "animate.css";
@@ -56,7 +62,6 @@ body {
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
   -webkit-animation-name: parpadeo;
   -webkit-animation-duration: s;
   -webkit-animation-timing-function: linear;
@@ -67,7 +72,7 @@ body {
   margin-top: 20px;
   display: flex;
   align-items: flex-end;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
 }
 .separation p {
   margin: 0;
@@ -79,8 +84,8 @@ body {
 .separation .line {
   margin: 0px 0px 0px 10px;
   width: 100%;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
+  height: 0.08px;
+  background-color: var(--gray);
 }
 
 @-moz-keyframes parpadeo {
