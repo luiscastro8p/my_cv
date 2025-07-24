@@ -59,7 +59,7 @@ const Home = () => {
 
         <Header />
         <Me />
-        <AboutMe />
+       {/*  <AboutMe /> */}
         <Skills />
         <Services darkMode={darkMode} />
         <Contact />

@@ -6,19 +6,33 @@ import sass from "../../assets/img/skills/sass.png";
 import html from "../../assets/img/skills/html.png";
 import js from "../../assets/img/skills/js.png";
 import ts from "../../assets/img/skills/typescript.svg";
+import nodejs from "../../assets/img/skills/nodejs.png";
+import rxjs from "../../assets/img/skills/rxjs.jpeg";
+
+
 const Tecnologies = ({ data }) => {
+  const tecnologies = [
+    { id: 1, img: angular, alt: "Angular", width: 20, height: 20 },
+    { id: 2, img: react, alt: "React", width: 25, height: 20 },
+    { id: 3, img: bootstrap, alt: "Bootstrap", width: 24, height: 20 },
+    { id: 4, img: sass, alt: "Sass", width: 24, height: 20 },
+    { id: 5, img: html, alt: "HTML", width: 20, height: 20 },
+    { id: 6, img: js, alt: "JavaScript", width: 20, height: 20 },
+    { id: 7, img: ts, alt: "TypeScript", width: 20, height: 20 },
+    { id: 8, img: nodejs, alt: "Node js", width: 20, height: 20 },
+    { id: 9, img: rxjs, alt: "Rxjs", width: 20, height: 20 },
+  ];
+  const selectedTech = tecnologies.find((tech) => tech.id === data);
   return (
     <>
-      {data === 1 && <img src={angular} alt="angular" width={20} height={20} />}
-      {data === 2 && <img src={react} alt="react" width={25} height={20} />}
-      {data === 3 && (
-        <img src={bootstrap} alt="bootstrap" width={24} height={20} />
+      {selectedTech && (
+        <img
+          src={selectedTech.img}
+          alt={selectedTech.alt}
+          width={selectedTech.width}
+          height={selectedTech.height}
+        />
       )}
-      {data === 4 && <img src={sass} alt="sass" width={24} height={20} />}
-      {data === 5 && <img src={html} alt="html" width={20} height={20} />}
-      {data === 6 && <img src={js} alt="js" width={20} height={20} />}
-      {data === 7 && <img src={ts} alt="ts" width={20} height={20} />}
-      
     </>
   );
 };

@@ -13,6 +13,7 @@ import futureDev from "../../../assets/img/works/future.jpg";
 import collapse from "../../../assets/img/works/collapse.png";
 import points from "../../../assets/img/works/points.png";
 import Tecnologies from "../../../components/tecnologies/tecnologies";
+import Sorteo from "../../../assets/img/works/Sorteo.png";
 
 const Services = ({ darkMode }) => {
   const [mode, setMode] = React.useState(false);
@@ -22,16 +23,31 @@ const Services = ({ darkMode }) => {
      4:sass 
      5:html
      6:js
-     7:js */
+     7:ts
+     8:node js
+     9:rxjs */
   const works = [
     {
-      title: "nas",
+      title: "NAS",
       img: nas,
       description: `Plataforma acuicola para monitoreo, supervicion y control para granjas.`,
       tecnology: [1, 7, 3, 4],
     },
     {
-      title: "wep",
+      title: "Agronodo",
+      img: agronodo,
+      description: `Plataforma agrícola que supervisa informes y
+       actividades de ingenieros en campo, mejorando la eficiencia y toma de decisiones.`,
+      tecnology: [1, 7, 3, 4],
+    },
+    {
+      title: "Sorteos el teroque",
+      img: Sorteo,
+      description: `Plataforma para la gestión integral de inventarios, control de gastos y administración de antenas de instalación.`,
+      tecnology: [1, 7, 3, 8, 4],
+    },
+    {
+      title: "WEP",
       img: wep,
       description: `Plataforma que agiliza entregas e inventario con seguimiento por estados, 
       ofreciendo visión completa en tiempo real, mejorando eficiencia y satisfacción del cliente.`,
@@ -45,18 +61,25 @@ const Services = ({ darkMode }) => {
       tecnology: [2, 4, 6],
     },
     {
-      title: "Agronodo",
-      img: agronodo,
-      description: `Plataforma agrícola que supervisa informes y
-       actividades de ingenieros en campo, mejorando la eficiencia y toma de decisiones.`,
-      tecnology: [1, 7, 3, 4],
-    },
-    {
       title: "Clariti",
       img: claribot,
       description: `Plataforma administrativa que gestiona pagos de servicios y 
       brinda soporte a través de chat, optimizando la experiencia del cliente.`,
       tecnology: [2, 4, 6],
+    },
+    {
+      title: "Captiosys",
+      img: cap,
+      description: `Plataforma administrativa que permite el control integral de inventario y 
+      gestión de instalaciones en entornos rurales, optimizando la eficiencia operativa.`,
+      tecnology: [2, 4, 6],
+    },
+    {
+      title: "FutureDevelopers",
+      img: futureDev,
+      description: `Plataforma para la gestión de estudiantes,
+      foros de comentarios y ejercicios de desarrollo, abarcando áreas de backend, frontend y más.`,
+      tecnology: [1, 7, 3, 4],
     },
     {
       title: "Asi",
@@ -71,20 +94,6 @@ const Services = ({ darkMode }) => {
       description: `Landing page para una empresa de venta de productos para el hogar, 
       presentando una variedad de artículos y soluciones para mejorar la vida en casa.`,
       tecnology: [6, 3, 5, 4],
-    },
-    {
-      title: "Captiosys",
-      img: cap,
-      description: `Plataforma administrativa que permite el control integral de inventario y 
-      gestión de instalaciones en entornos rurales, optimizando la eficiencia operativa.`,
-      tecnology: [2, 4, 6],
-    },
-    {
-      title: "FutureDevelopers",
-      img: futureDev,
-      description: `Plataforma para la gestión de estudiantes,
-       foros de comentarios y ejercicios de desarrollo, abarcando áreas de backend, frontend y más.`,
-      tecnology: [1, 7, 3, 4],
     },
   ];
 

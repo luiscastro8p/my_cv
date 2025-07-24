@@ -28,8 +28,20 @@ const Me = () => {
               />
             </div>
             {/*   <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small> */}
+
+            <p className="description">
+              Soy un desarrollador web frontend con más de 5 años de experiencia
+              en la creación de interfaces modernas, dinámicas y responsivas.
+              Actualmente resido en Sinaloa, México, y me especializo en
+              desarrollar soluciones escalables y optimizadas para distintos
+              dispositivos. Me enfoco en escribir código limpio, seguir buenas
+              prácticas de desarrollo y mantenerme siempre actualizado con las
+              últimas tendencias del desarrollo web.
+            </p>
+
             <div className="buttons-body animate__animated animate__fadeInLeft animate__faster">
-              <button className="btn-dark">Más sobre mí</button>
+              {/*     <button className="btn-dark">Más sobre mí</button> */}
+
               <a
                 className="btn-white"
                 href={portafolio}
@@ -45,7 +57,6 @@ const Me = () => {
                 />
               </a>
             </div>
-
             <div className="img-body ">
               <a
                 href="https://github.com/luiscastro8p"

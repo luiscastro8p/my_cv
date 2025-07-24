@@ -11,7 +11,8 @@ import sass from "../../../assets/img/skills/sass.png";
 import ionic from "../../../assets/img/skills/ionic.avif";
 import Separator from "../../../components/separator/separator";
 import github from "../../../assets/img/skills/git.png";
-
+import nosejs from "../../../assets/img/skills/nodejs.png";
+import rxjs from "../../../assets/img/skills/rxjs.jpeg";
 
 const Skills = () => {
   const duration = 2000; // ms
@@ -52,10 +53,11 @@ const Skills = () => {
             <img src={ts} alt="ts" style={{ animation: animStr(3) }} />
             <img src={html} alt="html" style={{ animation: animStr(4) }} />
             <img src={css} alt="css" style={{ animation: animStr(5) }} />
+            <img src={rxjs} alt="rxjs" style={{ animation: animStr(10) }} />
             <img src={sass} alt="sass" style={{ animation: animStr(6) }} />
             <img src={ionic} alt="ionic" style={{ animation: animStr(7) }} />
             <img src={github} alt="github" style={{ animation: animStr(8) }} />
-
+            <img src={nosejs} alt="Node Js" style={{ animation: animStr(9) }} />
           </div>
         </div>
       </section>
