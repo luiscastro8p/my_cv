@@ -65,14 +65,14 @@ const Navbar = () => {
               <img src={home} alt="icon" width={30} />
             </div>
           </li>
-          <li
+       {/*    <li
             className={activeSection === "#about-me" ? "active" : ""}
             onClick={() => scrollToSection("#about-me")}
           >
             <div>
               <img src={address} alt="icon" width={30} />
             </div>
-          </li>
+          </li> */}
           <li
             className={activeSection === "#section-skills" ? "active" : ""}
             onClick={() => scrollToSection("#section-skills")}

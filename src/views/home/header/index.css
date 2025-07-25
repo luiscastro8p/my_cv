@@ -101,6 +101,10 @@ nav ul li div {
     background-color: var(--secondary-light);
     justify-content: space-around;
   }
+    nav ul li{
+    width: 100%;
+  }
+
 
   nav ul .active {
     background-color: white;
