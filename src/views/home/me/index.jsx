@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 import TypingEffect from "../../../components/typeWriteEffect";
 import github from "../../../assets/img/github.svg";

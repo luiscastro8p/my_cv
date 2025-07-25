@@ -84,7 +84,7 @@
 .buttons-body {
   display: flex;
   gap: 30px;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
