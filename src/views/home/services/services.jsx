@@ -1,6 +1,7 @@
 import React from "react";
 import "./services.css";
 import Separator from "../../../components/separator/separator";
+import ImageModal from "../../../components/modal/ImageModal";
 import nas from "../../../assets/img/works/nas.png";
 import wep from "../../../assets/img/works/wep.jpg";
 import agronodo from "../../../assets/img/works/agronodo.png";
@@ -14,9 +15,15 @@ import collapse from "../../../assets/img/works/collapse.png";
 import points from "../../../assets/img/works/points.png";
 import Tecnologies from "../../../components/tecnologies/tecnologies";
 import Sorteo from "../../../assets/img/works/Sorteo.png";
+import boletiza from "../../../assets/img/works/boletiza.png";
+import unaFlor from "../../../assets/img/works/una_flor.png";
+import fuelbishop from "../../../assets/img/works/fuelbishop.png";
 
 const Services = ({ darkMode }) => {
   const [mode, setMode] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [selectedImage, setSelectedImage] = React.useState(null);
+  const [selectedTitle, setSelectedTitle] = React.useState(null);
   /* 1:angular
      2:react
      3:boostrap
@@ -27,6 +34,24 @@ const Services = ({ darkMode }) => {
      8:node js
      9:rxjs */
   const works = [
+    {
+      title: "Boletiza",
+      img: boletiza,
+      description: `Plataforma administrativa y pública para la gestión integral de eventos y venta de boletos en línea. Integración de pasarela de pago con Mercado Libre, selección dinámica de secciones y asientos interactivos. Arquitetura monorepo escalable para reutilizar componentes entre web y React Native.`,
+      tecnology: [2, 4, 7],
+    },
+    {
+      title: "Una Flor",
+      img: unaFlor,
+      description: `Plataforma integral de gestión de ventas de flores para múltiples tiendas y repartidores. Incluye mapas interactivos para seguimiento logístico en tiempo real, visualización dinámica de sectores, dashboards analíticos con reportes semanales y sistema automático de comisiones.`,
+      tecnology: [1, 4, 7],
+    },
+    {
+      title: "FuelBishop",
+      img: fuelbishop,
+      description: `Plataforma de administración de control volumétrico para gestionar empresas, estaciones, tanques, dispensadores y mangueras, con enfoque en el control operativo y la gestión de facturas.`,
+      tecnology: [2, 4, 6],
+    },
     {
       title: "NAS",
       img: nas,
@@ -100,6 +125,18 @@ const Services = ({ darkMode }) => {
   const duration = 300; // ms
   const delay = 100; // ms
 
+  const handleOpenModal = (image, title) => {
+    setSelectedImage(image);
+    setSelectedTitle(title);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+    setSelectedTitle(null);
+  };
+
   const animStr = (i) =>
     `pulse ${duration}ms ease-out ${delay * (i + 1)}ms forwards`;
   return (
@@ -148,7 +185,12 @@ const Services = ({ darkMode }) => {
                       </div>
                     </div>
                     <div className="content-name">
-                      <h5>{item.title}</h5>
+                      <h5
+                        onClick={() => handleOpenModal(item.img, item.title)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        {item.title}
+                      </h5>
                       <div>
                         {item.tecnology.map((item, idx) => {
                           return (
@@ -182,7 +224,12 @@ const Services = ({ darkMode }) => {
 
                     <div className="content">
                       <div className="text">
-                        <h3>{item.title}</h3>
+                        <h3
+                          onClick={() => handleOpenModal(item.img, item.title)}
+                          style={{ cursor: "pointer" }}
+                        >
+                          {item.title}
+                        </h3>
                         <p> {item.description}</p>
                       </div>
                       <div className="tecnologies">
@@ -202,6 +249,12 @@ const Services = ({ darkMode }) => {
           )}
         </div>
       </section>
+      <ImageModal
+        isOpen={isModalOpen}
+        image={selectedImage}
+        title={selectedTitle}
+        onClose={handleCloseModal}
+      />
     </>
   );
 };
