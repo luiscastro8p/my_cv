@@ -1,0 +1,208 @@
+.projects__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.projects__top .section-heading {
+  flex: 1;
+}
+
+.projects__layout-toggle {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: var(--bw) solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+
+.projects__toggle {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 32px;
+  border: 0;
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--text-subtle);
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+
+.projects__toggle:hover {
+  color: var(--accent);
+}
+
+.projects__toggle.is-active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.projects {
+  list-style: none;
+  display: grid;
+  gap: var(--sp-5);
+}
+
+.projects--grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.projects--list {
+  grid-template-columns: 1fr;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: var(--bw) solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
+}
+
+.project:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.project__media {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-bottom: var(--bw) solid var(--border);
+  background: var(--surface-2);
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.project__media img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+
+.project__media:hover img {
+  transform: scale(1.04);
+}
+
+.project__zoom {
+  position: absolute;
+  right: var(--sp-2);
+  bottom: var(--sp-2);
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  color: var(--text);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+
+.project__media:hover .project__zoom,
+.project__media:focus-visible .project__zoom {
+  opacity: 1;
+}
+
+.project__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5) var(--sp-5);
+}
+
+.project__title {
+  font-size: var(--fs-lg);
+}
+
+.project__company {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+}
+
+.project__description {
+  flex: 1;
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.project__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  list-style: none;
+}
+
+.project__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+}
+
+.project__link:hover {
+  text-decoration: underline;
+}
+
+/* Vista de lista: miniatura al costado */
+.projects--list .project {
+  flex-direction: row;
+}
+
+.projects--list .project__media {
+  flex: 0 0 clamp(220px, 30%, 340px);
+  border-bottom: 0;
+  border-right: var(--bw) solid var(--border);
+}
+
+.projects--list .project__media img {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 190px;
+}
+
+.projects__more {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--sp-8);
+}
+
+@media (max-width: 720px) {
+  .projects__top {
+    flex-direction: column;
+  }
+
+  .projects__layout-toggle {
+    display: none; /* en móvil sólo hay una disposición sensata */
+  }
+
+  .projects--list .project {
+    flex-direction: column;
+  }
+
+  .projects--list .project__media {
+    flex: none;
+    border-right: 0;
+    border-bottom: var(--bw) solid var(--border);
+  }
+
+  .projects--list .project__media img {
+    aspect-ratio: 16 / 10;
+    min-height: 0;
+  }
+}
