@@ -47,7 +47,6 @@ const svg = `
   <rect width="${W}" height="${H}" fill="url(#grid)"/>
   <rect width="${W}" height="${H}" fill="url(#glow)"/>
 
-  <text x="80" y="176" class="prompt">$ whoami</text>
   <text x="80" y="286" class="name">Luis Castro</text>
   <text x="80" y="348" class="role">Frontend Developer</text>
   <text x="80" y="430" class="meta">Angular · React · TypeScript</text>
