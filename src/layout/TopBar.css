@@ -1,0 +1,67 @@
+.topbar {
+  position: fixed;
+  top: var(--sp-4);
+  right: var(--sp-4);
+  z-index: var(--z-float);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1);
+  border: var(--bw) solid var(--border);
+  border-radius: var(--r-full);
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+}
+
+.topbar__button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: var(--r-full);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+
+.topbar__button:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.topbar__lang {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding-inline: var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.topbar__lang-item {
+  padding: 2px 4px;
+  border-radius: var(--r-sm);
+  color: var(--text-subtle);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.topbar__lang-item:hover {
+  color: var(--accent);
+}
+
+.topbar__lang-item.is-active {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
+.topbar__lang-sep {
+  color: var(--border-strong);
+}
