@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Luis Castro — Frontend Developer | Angular, React, TypeScript",
+    "description": "Frontend developer with {{years}}+ years building web platforms with Angular, React and TypeScript. Portfolio, work experience and contact.",
+    "ogAlt": "Luis Castro, frontend developer"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "themeToggle": "Toggle theme",
+    "themeToLight": "Switch to light mode",
+    "themeToDark": "Switch to dark mode",
+    "langLabel": "Language",
+    "langToEnglish": "View this site in English",
+    "langToSpanish": "View this site in Spanish",
+    "openImage": "View larger screenshot of {{name}}",
+    "closeModal": "Close",
+    "externalLink": "Opens in a new tab"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Luis Castro",
+    "roles": [
+      "Frontend Developer",
+      "Computer Systems Engineer",
+      "Angular & React specialist"
+    ],
+    "available": "Available for new projects",
+    "summary": "I build modern, accessible and fast web interfaces. Over {{years}} years developing management platforms, real-time dashboards and custom applications with <1>Angular</1>, <3>React</3> and <5>TypeScript</5>, based in Los Mochis, Mexico.",
+    "ctaResume": "Download CV",
+    "ctaContact": "Get in touch",
+    "stats": {
+      "years": "years of experience",
+      "projects": "projects delivered",
+      "tech": "technologies"
+    }
+  },
+  "about": {
+    "title": "about-me",
+    "heading": "A bit about me",
+    "bio": "I'm a frontend developer and, when a project calls for it, I also work on the backend. I specialise in turning complex business processes — logistics, inventory, IoT monitoring, payments — into interfaces people can use without a manual. I work with agile methodologies, mainly Scrum, and I'm comfortable leading a team's frontend.",
+    "bio2": "I care about the details: clean code, reusable components, accessibility and performance. I learn fast and I enjoy projects where you have to understand the domain properly before writing the first line.",
+    "facts": {
+      "name": "Name",
+      "age": "Age",
+      "ageValue": "{{count}} years old",
+      "location": "Location",
+      "experience": "Experience",
+      "experienceValue": "{{count}} years",
+      "email": "Email",
+      "availability": "Availability",
+      "availabilityValue": "Open to offers"
+    }
+  },
+  "experience": {
+    "title": "experience",
+    "heading": "Work experience",
+    "intro": "The teams and projects I've worked with. Today I combine my role at Ochoa Technology with freelance work for Fragmento.",
+    "present": "Present",
+    "educationTitle": "Education",
+    "items": {
+      "ochoa": {
+        "role": "Front-End Development Lead",
+        "bullets": [
+          "Led the front-end team, delivering more than 80% of projects on time and to spec.",
+          "NAS: monitoring and control platform for feeders in aquaculture ponds. Built real-time data interfaces and integrated IoT sensors and devices through APIs.",
+          "Captiosys: inventory and antenna management platform with live data visualisation.",
+          "NAS Sim: contributed to the visual layer of an internal tool for testing the team’s in-house devices, built with Python and Jinja templates over HTML, CSS and JavaScript."
+        ]
+      },
+      "freelance": {
+        "role": "Full-Stack Developer",
+        "bullets": [
+          "Sorteos: built and deployed a complete raffle ticket sales platform with an admin module and multi-user support.",
+          "Node.js and TypeScript on the backend, Angular 19 with SCSS and Bootstrap on the front-end."
+        ],
+        "company": "Independent projects"
+      },
+      "thinkcares": {
+        "role": "Front-End Developer",
+        "bullets": [
+          "Worked on internal projects under Scrum, taking part in sprints and planning sessions.",
+          "Developed and maintained applications with Qwik, JavaScript and CSS from Figma designs.",
+          "Diagnosed and fixed technical issues to improve functionality and performance."
+        ]
+      },
+      "fragmento": {
+        "role": "Front-End Development Lead",
+        "bullets": [
+          "Agronodo: field tracking for agricultural engineers with reporting and performance control. Built interactive dashboards with Angular and SCSS, integrating real-time data over WebSockets alongside the backend team.",
+          "DoCapital: real-time investment management and visualisation. Created reusable components and validated forms on top of financial APIs.",
+          "Creaciones Decorativas Alma and ASI: responsive sites optimised for performance and basic SEO."
+        ]
+      },
+      "hackademy": {
+        "role": "Front-End Developer",
+        "bullets": [
+          "Clariti: admin platform for utility payments with chat-based customer support.",
+          "WEP: sales and shipment tracking platform with status-based workflow.",
+          "Advised on internal projects and trained team members."
+        ]
+      }
+    },
+    "education": {
+      "itlm": {
+        "degree": "B.Eng. in Computer Systems"
+      }
+    },
+    "types": {
+      "freelance": "Freelance",
+      "employment": "Full-time"
+    },
+    "current": "Ongoing"
+  },
+  "skills": {
+    "title": "skills",
+    "heading": "What I work with",
+    "intro": "A solid foundation in JavaScript and TypeScript, focused on the Angular and React ecosystems. Comfortable with Git, agile teamwork and debugging problems in real-world environments.",
+    "groups": {
+      "language": "Languages & styling",
+      "framework": "Frameworks & libraries",
+      "tooling": "Tooling"
+    }
+  },
+  "projects": {
+    "title": "projects",
+    "heading": "Projects",
+    "intro": "A selection of the platforms and sites I've worked on.",
+    "viewGrid": "Grid view",
+    "viewList": "List view",
+    "showAll": "See all {{count}} projects",
+    "showLess": "Show less",
+    "atCompany": "At {{company}}",
+    "visit": "Visit site",
+    "items": {
+      "boletiza": {
+        "title": "Boletiza",
+        "description": "Admin and public platform for event management and online ticket sales. I integrated the Mercado Pago gateway, dynamic section selection and an interactive seat map, on a monorepo architecture sharing components between web and React Native."
+      },
+      "unaFlor": {
+        "title": "Una Flor",
+        "description": "End-to-end flower sales management for multiple stores and couriers: interactive maps for real-time logistics tracking, sector visualisation, dashboards with weekly reports and automatic commission calculation."
+      },
+      "fuelbishop": {
+        "title": "FuelBishop",
+        "description": "Volumetric fuel control administration: companies, stations, tanks, dispensers and hoses, focused on operational control and invoice management."
+      },
+      "nas": {
+        "title": "NAS",
+        "description": "Aquaculture platform for farm monitoring, supervision and control, with live sensor readings and remote feeder control."
+      },
+      "agronodo": {
+        "title": "Agronodo",
+        "description": "Agricultural platform tracking field engineers' reports and activities, with real-time data over WebSockets to speed up decision-making."
+      },
+      "sorteo": {
+        "title": "Sorteos El Teroque",
+        "description": "Complete raffle ticket sales platform with an admin module, inventory control and expense management."
+      },
+      "wep": {
+        "title": "WEP",
+        "description": "Delivery and inventory platform with status-based tracking, giving a complete real-time view of every shipment."
+      },
+      "docapital": {
+        "title": "DoCapital",
+        "description": "Admin platform for managing payments and investments, focused on transparency and traceability of every movement."
+      },
+      "clariti": {
+        "title": "Clariti",
+        "description": "Admin platform for utility payments with built-in chat customer support."
+      },
+      "captiosys": {
+        "title": "Captiosys",
+        "description": "End-to-end inventory control and antenna installation management in rural environments."
+      },
+      "futureDev": {
+        "title": "Future Developers",
+        "description": "Educational platform for student management, discussion forums and backend/frontend coding exercises."
+      },
+      "asi": {
+        "title": "ASI",
+        "description": "Landing page for a construction company, showcasing services, projects and experience."
+      },
+      "alma": {
+        "title": "Creaciones Decorativas Alma",
+        "description": "Landing page for a home decoration products company."
+      }
+    }
+  },
+  "contact": {
+    "title": "contact",
+    "heading": "Let's work together",
+    "intro": "If you have a project, a role to fill or just a question, drop me a line. I reply within 24 hours.",
+    "directEmail": "Or email me directly at",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "What's your name?",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me what you have in mind…",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "charsLeft": "{{count}} characters left"
+    },
+    "errors": {
+      "nameRequired": "Please enter your name.",
+      "nameTooShort": "That name looks too short.",
+      "emailRequired": "I need an email to reply to.",
+      "emailInvalid": "That email doesn't look valid.",
+      "messageRequired": "Tell me something, even if it's brief.",
+      "messageTooShort": "That message is too short.",
+      "notConfigured": "The form isn't configured yet. Please email me at {{email}}.",
+      "network": "The message couldn't be sent. Try again or email me at {{email}}.",
+      "generic": "The message couldn't be sent."
+    },
+    "success": "Message sent! I'll get back to you as soon as I can."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with React and Vite.",
+    "sourceCode": "Source code"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "code": "Error 404",
+    "message": "The page you're looking for doesn't exist or has moved.",
+    "back": "Back to home"
+  }
+}
