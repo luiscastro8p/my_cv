@@ -1,0 +1,228 @@
+.timeline {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  padding-left: var(--sp-8);
+}
+
+/* Línea vertical continua */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(var(--border-strong), var(--border));
+}
+
+.timeline__item {
+  position: relative;
+}
+
+.timeline__marker {
+  position: absolute;
+  left: calc(var(--sp-8) * -1);
+  top: 22px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: var(--bg);
+}
+
+.timeline__item.is-current .timeline__marker {
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.timeline__item.is-current .timeline__card {
+  border-color: var(--accent);
+}
+
+.timeline__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+  border: var(--bw) solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
+}
+
+.timeline__card:hover {
+  border-color: var(--border-strong);
+  transform: translateX(3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--sp-2) var(--sp-4);
+}
+
+.timeline__company {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-lg);
+}
+
+/* Distingue la colaboración freelance del empleo, que corren en paralelo */
+.timeline__tag {
+  padding: 0.1rem 0.5rem;
+  border: var(--bw) solid var(--border-strong);
+  border-radius: var(--r-full);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.timeline__current {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.timeline__current-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline__role {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+}
+
+.timeline__when {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-subtle);
+  white-space: nowrap;
+}
+
+.timeline__place {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.timeline__bullets {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  list-style: none;
+  color: var(--text-muted);
+}
+
+.timeline__bullets li {
+  position: relative;
+  padding-left: var(--sp-5);
+}
+
+.timeline__bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.timeline__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  list-style: none;
+}
+
+.experience__subtitle {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-12);
+  margin-bottom: var(--sp-4);
+  font-size: var(--fs-lg);
+  color: var(--text);
+}
+
+.experience__subtitle svg {
+  color: var(--accent);
+}
+
+.education {
+  list-style: none;
+  padding-left: var(--sp-8);
+}
+
+.education__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2) var(--sp-4);
+  padding: var(--sp-4) var(--sp-5);
+  border: var(--bw) solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+}
+
+.education__degree {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.education__school {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.education__when {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-subtle);
+}
+
+@media (max-width: 720px) {
+  .timeline,
+  .education {
+    padding-left: var(--sp-6);
+  }
+
+  .timeline__marker {
+    left: calc(var(--sp-6) * -1);
+    top: 18px;
+    width: 13px;
+    height: 13px;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline__when {
+    align-items: flex-start;
+  }
+
+  .timeline__card {
+    padding: var(--sp-4);
+  }
+}

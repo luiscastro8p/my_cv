@@ -20,6 +20,8 @@ function doPost(e) {
     const nombre = String(data.nombre || "").trim();
     const correo = String(data.correo || "").trim();
     const descripcion = String(data.descripcion || "").trim();
+    // Idioma en el que el visitante vio el sitio (opcional, llega desde v2).
+    const idioma = data.lang === "en" ? "EN" : data.lang === "es" ? "ES" : "";
 
     if (!nombre || !correo || !descripcion) {
       return json({ ok: false, error: "Faltan campos obligatorios" });
@@ -34,11 +36,12 @@ function doPost(e) {
     MailApp.sendEmail({
       to: DESTINATARIO,
       replyTo: correo,
-      subject: "Nuevo mensaje desde tu CV: " + nombre,
+      subject: "Nuevo mensaje desde tu CV" + (idioma ? " [" + idioma + "]" : "") + ": " + nombre,
       htmlBody:
         "<h3>Nuevo mensaje desde el formulario del CV</h3>" +
         "<p><b>Nombre:</b> " + escapeHtml(nombre) + "</p>" +
         "<p><b>Correo:</b> " + escapeHtml(correo) + "</p>" +
+        (idioma ? "<p><b>Idioma del sitio:</b> " + idioma + "</p>" : "") +
         "<p><b>Mensaje:</b></p>" +
         "<p>" + escapeHtml(descripcion).replace(/\n/g, "<br>") + "</p>",
     });

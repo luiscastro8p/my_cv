@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Luis Castro — Desarrollador Frontend | Angular, React, TypeScript",
+    "description": "Desarrollador Frontend con más de {{years}} años de experiencia construyendo plataformas web con Angular, React y TypeScript. Portafolio, experiencia profesional y contacto.",
+    "ogAlt": "Luis Castro, desarrollador frontend"
+  },
+  "nav": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "a11y": {
+    "skip": "Saltar al contenido",
+    "themeToggle": "Cambiar tema",
+    "themeToLight": "Activar modo claro",
+    "themeToDark": "Activar modo oscuro",
+    "langLabel": "Idioma",
+    "langToEnglish": "Ver este sitio en inglés",
+    "langToSpanish": "Ver este sitio en español",
+    "openImage": "Ver captura de {{name}} en grande",
+    "closeModal": "Cerrar",
+    "externalLink": "Se abre en una pestaña nueva"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Luis Castro",
+    "roles": [
+      "Desarrollador Frontend",
+      "Ing. en Informática",
+      "Especialista en Angular y React"
+    ],
+    "available": "Disponible para nuevos proyectos",
+    "summary": "Construyo interfaces web modernas, accesibles y rápidas. Más de {{years}} años desarrollando plataformas de gestión, dashboards en tiempo real y aplicaciones a medida con <1>Angular</1>, <3>React</3> y <5>TypeScript</5>, desde Los Mochis, Sinaloa.",
+    "ctaResume": "Descargar CV",
+    "ctaContact": "Hablemos",
+    "stats": {
+      "years": "años de experiencia",
+      "projects": "proyectos entregados",
+      "tech": "tecnologías"
+    }
+  },
+  "about": {
+    "title": "sobre-mi",
+    "heading": "Un poco sobre mí",
+    "bio": "Soy desarrollador frontend y, cuando el proyecto lo pide, también toco el backend. Me especializo en convertir procesos de negocio complejos —logística, inventarios, monitoreo IoT, pagos— en interfaces que la gente puede usar sin manual. Trabajo con metodologías ágiles, principalmente Scrum, y me siento cómodo liderando el frente de un equipo.",
+    "bio2": "Me importa el detalle: código limpio, componentes reutilizables, accesibilidad y rendimiento. Aprendo rápido y disfruto los proyectos donde hay que entender bien el dominio antes de escribir la primera línea.",
+    "facts": {
+      "name": "Nombre",
+      "age": "Edad",
+      "ageValue": "{{count}} años",
+      "location": "Ubicación",
+      "experience": "Experiencia",
+      "experienceValue": "{{count}} años",
+      "email": "Correo",
+      "availability": "Disponibilidad",
+      "availabilityValue": "Abierto a propuestas"
+    }
+  },
+  "experience": {
+    "title": "experiencia",
+    "heading": "Experiencia profesional",
+    "intro": "Estos son los equipos y proyectos donde he trabajado. Hoy combino mi puesto en Ochoa Technology con colaboraciones freelance en Fragmento.",
+    "present": "Actualidad",
+    "educationTitle": "Educación",
+    "items": {
+      "ochoa": {
+        "role": "Líder de desarrollo Front-End",
+        "bullets": [
+          "Lideré el frente de desarrollo Front-End, asegurando la entrega de más del 80% de los proyectos en tiempo y forma.",
+          "NAS: plataforma de monitoreo y control de alimentadoras en estanques acuícolas. Construí interfaces de datos en tiempo real e integré sensores y dispositivos IoT mediante consumo de APIs.",
+          "Captiosys: plataforma de gestión y monitoreo de inventarios y antenas, con visualización de datos en vivo.",
+          "NAS Sim: apoyo en la capa visual de una herramienta interna para probar los dispositivos de prueba del equipo, construida con Python y plantillas Jinja sobre HTML, CSS y JavaScript."
+        ]
+      },
+      "freelance": {
+        "role": "Desarrollador Full-Stack",
+        "bullets": [
+          "Sorteos: desarrollo y despliegue de una plataforma completa de venta de boletos, con módulo administrativo y soporte para múltiples usuarios.",
+          "Backend en Node.js con TypeScript y front-end en Angular 19 con SCSS y Bootstrap."
+        ],
+        "company": "Proyectos independientes"
+      },
+      "thinkcares": {
+        "role": "Desarrollador Front-End",
+        "bullets": [
+          "Participación en proyectos internos bajo Scrum, con sprints y reuniones de planificación.",
+          "Desarrollo y mantenimiento de aplicaciones con Qwik, JavaScript y CSS, partiendo de diseños en Figma.",
+          "Diagnóstico y resolución de problemas técnicos para optimizar funcionalidad y rendimiento."
+        ]
+      },
+      "fragmento": {
+        "role": "Líder de desarrollo Front-End",
+        "bullets": [
+          "Agronodo: seguimiento de ingenieros agrónomos en campo con control de reportes y desempeño. Desarrollé dashboards interactivos con Angular y SCSS, integrando datos en tiempo real por WebSockets junto al equipo de back-end.",
+          "DoCapital: gestión y visualización de inversiones en tiempo real. Creé componentes reutilizables y formularios con validación sobre APIs financieras.",
+          "Creaciones Decorativas Alma y ASI: sitios responsivos optimizados en rendimiento y SEO básico."
+        ]
+      },
+      "hackademy": {
+        "role": "Desarrollador Front-End",
+        "bullets": [
+          "Clariti: plataforma administrativa para el pago de servicios con soporte vía chat.",
+          "WEP: plataforma de ventas y seguimiento de envíos por estados.",
+          "Asesoría en proyectos internos y capacitación al equipo."
+        ]
+      }
+    },
+    "education": {
+      "itlm": {
+        "degree": "Ingeniería en Informática"
+      }
+    },
+    "types": {
+      "freelance": "Freelance",
+      "employment": "Tiempo completo"
+    },
+    "current": "En curso"
+  },
+  "skills": {
+    "title": "habilidades",
+    "heading": "Con qué trabajo",
+    "intro": "Base sólida en JavaScript y TypeScript, con foco en el ecosistema Angular y React. Domino Git, el trabajo en equipo con metodologías ágiles y la depuración de problemas en entornos reales.",
+    "groups": {
+      "language": "Lenguajes y estilos",
+      "framework": "Frameworks y librerías",
+      "tooling": "Herramientas"
+    }
+  },
+  "projects": {
+    "title": "proyectos",
+    "heading": "Proyectos",
+    "intro": "Una selección de plataformas y sitios en los que he trabajado.",
+    "viewGrid": "Ver en cuadrícula",
+    "viewList": "Ver en lista",
+    "showAll": "Ver los {{count}} proyectos",
+    "showLess": "Ver menos",
+    "atCompany": "En {{company}}",
+    "visit": "Visitar sitio",
+    "items": {
+      "boletiza": {
+        "title": "Boletiza",
+        "description": "Plataforma administrativa y pública para la gestión de eventos y venta de boletos en línea. Integré la pasarela de pago de Mercado Pago, la selección dinámica de secciones y un mapa de asientos interactivo, sobre una arquitectura monorepo que comparte componentes entre la web y React Native."
+      },
+      "unaFlor": {
+        "title": "Una Flor",
+        "description": "Gestión integral de venta de flores para múltiples tiendas y repartidores: mapas interactivos para el seguimiento logístico en tiempo real, visualización de sectores, dashboards con reportes semanales y cálculo automático de comisiones."
+      },
+      "fuelbishop": {
+        "title": "FuelBishop",
+        "description": "Administración de control volumétrico de combustible: empresas, estaciones, tanques, dispensadores y mangueras, con foco en el control operativo y la gestión de facturas."
+      },
+      "nas": {
+        "title": "NAS",
+        "description": "Plataforma acuícola de monitoreo, supervisión y control para granjas camaronícolas, con lectura en vivo de sensores y control remoto de alimentadoras."
+      },
+      "agronodo": {
+        "title": "Agronodo",
+        "description": "Plataforma agrícola que supervisa informes y actividades de ingenieros en campo, con datos en tiempo real por WebSockets para acelerar la toma de decisiones."
+      },
+      "sorteo": {
+        "title": "Sorteos El Teroque",
+        "description": "Plataforma completa de venta de boletos para sorteos, con módulo administrativo, control de inventario y gestión de gastos."
+      },
+      "wep": {
+        "title": "WEP",
+        "description": "Plataforma de entregas e inventario con seguimiento por estados, que da visión completa en tiempo real de cada envío."
+      },
+      "docapital": {
+        "title": "DoCapital",
+        "description": "Plataforma administrativa para gestionar pagos e inversiones, con foco en la transparencia y la trazabilidad de cada movimiento."
+      },
+      "clariti": {
+        "title": "Clariti",
+        "description": "Plataforma administrativa para el pago de servicios, con soporte al cliente integrado vía chat."
+      },
+      "captiosys": {
+        "title": "Captiosys",
+        "description": "Control integral de inventario y gestión de instalaciones de antenas en entornos rurales."
+      },
+      "futureDev": {
+        "title": "Future Developers",
+        "description": "Plataforma educativa para la gestión de estudiantes, foros de comentarios y ejercicios de desarrollo en backend y frontend."
+      },
+      "asi": {
+        "title": "ASI",
+        "description": "Landing page para una empresa de construcción, destacando servicios, proyectos y experiencia."
+      },
+      "alma": {
+        "title": "Creaciones Decorativas Alma",
+        "description": "Landing page para una empresa de artículos de decoración para el hogar."
+      }
+    }
+  },
+  "contact": {
+    "title": "contacto",
+    "heading": "¿Trabajamos juntos?",
+    "intro": "Si tienes un proyecto, una vacante o simplemente una duda, escríbeme. Respondo en menos de 24 horas.",
+    "directEmail": "O escríbeme directo a",
+    "form": {
+      "name": "Nombre y apellido",
+      "namePlaceholder": "¿Cómo te llamas?",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tucorreo@ejemplo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame en qué estás pensando…",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando…",
+      "charsLeft": "{{count}} caracteres restantes"
+    },
+    "errors": {
+      "nameRequired": "Escribe tu nombre.",
+      "nameTooShort": "El nombre es demasiado corto.",
+      "emailRequired": "Necesito un correo para responderte.",
+      "emailInvalid": "Ese correo no parece válido.",
+      "messageRequired": "Cuéntame algo, aunque sea breve.",
+      "messageTooShort": "El mensaje es demasiado corto.",
+      "notConfigured": "El formulario aún no está configurado. Escríbeme a {{email}}.",
+      "network": "No se pudo enviar el mensaje. Inténtalo de nuevo o escríbeme a {{email}}.",
+      "generic": "No se pudo enviar el mensaje."
+    },
+    "success": "¡Mensaje enviado! Te responderé lo antes posible."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Hecho con React y Vite.",
+    "sourceCode": "Código fuente"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "code": "Error 404",
+    "message": "La ruta que buscas no existe o cambió de lugar.",
+    "back": "Volver al inicio"
+  }
+}

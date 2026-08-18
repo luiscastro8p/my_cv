@@ -1,0 +1,61 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--sp-5);
+}
+
+.skills__group {
+  padding: var(--sp-5);
+  border: var(--bw) solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+}
+
+.skills__group-title {
+  margin-bottom: var(--sp-4);
+  font-size: var(--fs-base);
+  font-family: var(--font-mono);
+  color: var(--text);
+}
+
+.skills__group-title span {
+  color: var(--accent);
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  list-style: none;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-2) var(--sp-3);
+  border: var(--bw) solid transparent;
+  border-radius: var(--r-md);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease),
+    background-color var(--dur-fast) var(--ease);
+}
+
+.skills__item svg {
+  flex: none;
+  color: var(--text-subtle);
+  transition: color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+
+.skills__item:hover {
+  color: var(--text);
+  border-color: var(--border);
+  background: var(--surface-2);
+}
+
+.skills__item:hover svg {
+  color: var(--brand);
+  transform: scale(1.08);
+}
